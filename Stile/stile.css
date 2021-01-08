@@ -53,11 +53,35 @@ ol {
     color: teal;
     text-decoration: none;
 }
+.content-link:hover{
+    color: tomato;
+}
 
 
 .right-content{
     color: teal;
     text-align: center;
     margin-right: 10px;
+}
+
+/*About*/
+
+.article-about img{
+    height: 400px;
+}
+
+.article-about a{
+    color: rgb(116, 7, 138);
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.article-about a:hover{
+    color: yellow;
+    background-color: rgb(116, 7, 138);
+    font-size: 20px;
 }
 
