@@ -66,8 +66,13 @@ ol {
 
 /*About*/
 
+.article-about{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
 .article-about img{
-    height: 400px;
+    height: 14em;
 }
 
 .article-about a{
