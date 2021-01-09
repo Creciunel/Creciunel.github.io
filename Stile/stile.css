@@ -6,11 +6,7 @@ body{
 /*NAvbar*/
 
 .Navbar{
-    background-color: rgba(92, 10, 60, 0.5);
-    height: 12vh;
-    padding-left: 1em;
-    padding-top: 1%;
-    
+    background-color: rgba(92, 10, 60, 0.5);    
 }
 
 .btn-size{
