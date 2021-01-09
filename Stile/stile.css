@@ -72,7 +72,12 @@ ol {
     border-radius: 20px;
 }
 
-.article-about img{
+.about-image1{
+    border-radius: 2em;
+    justify-content: center;
+}
+
+.about-image{
     height: 14em;
 }
 
