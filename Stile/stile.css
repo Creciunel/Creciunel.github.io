@@ -39,6 +39,7 @@ body{
     margin-top: 5px;
     margin-left: 10px;
     border: 2px solid rgb(31, 16, 16);
+    border-radius: 1em;
 }
 
 ol {
