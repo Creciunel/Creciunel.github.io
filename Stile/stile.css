@@ -92,3 +92,15 @@ ol {
     font-size: 20px;
 }
 
+/*Footer*/
+
+.footer{
+    background-color: rgba(92, 10, 60, 0.5);
+    text-align: center;
+   
+}
+
+.icon{
+    color:white;
+    font-size: 3em;
+}
