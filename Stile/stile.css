@@ -42,14 +42,11 @@ ol {
     list-style-type: none;
 }
 
-.content-menu{
-    text-align: left;
-}
-
 .content-link{
-    color: teal;
+    color: rgb(2, 34, 34);
     text-decoration: none;
 }
+
 .content-link:hover{
     color: tomato;
 }
@@ -94,13 +91,7 @@ ol {
 
 /*Footer*/
 
-.footer{
+footer{
     background-color: rgba(92, 10, 60, 0.5);
-    text-align: center;
-   
 }
 
-.icon{
-    color:white;
-    font-size: 3em;
-}
