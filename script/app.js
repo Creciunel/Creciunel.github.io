@@ -24,3 +24,4 @@ setTimeout( ()=>{
     foot.style.backgroundColor = 'black'
     foot.style.color = "white"
 }, 6000)
+
