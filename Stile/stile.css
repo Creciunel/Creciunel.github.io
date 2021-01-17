@@ -63,6 +63,13 @@ ol {
     text-align: center;
 }
 
+@media only screen and (max-width: 620px) {
+    .video{
+        height: 144px;
+        width: 256px;
+    }
+}
+
 
 /*About*/
 
@@ -76,9 +83,6 @@ ol {
     justify-content: center;
 }
 
-.about-image{
-    height: 14em;
-}
 
 .article-about a{
     color: rgb(116, 7, 138);
