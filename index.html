@@ -94,11 +94,17 @@
               </div>
             </article>  
             <article>
-              
+              <script>
+                function getResolution() {
+                    alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio);
+                }
+                </script>
+                <div class="p"> 
+                  <button type="button" class="btn btn-outline-primary" width="200" onclick="getResolution();">Get Resolution</button>
+                </div> 
             </article>          
         </div>
-
-    </div>
+      </div>    
 
 <!--Footer-->
 <footer class="page-footer">
