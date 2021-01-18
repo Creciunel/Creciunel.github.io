@@ -14,7 +14,6 @@ function addStyleTo(node, text){
     node.style.backgroundColor = 'black'
     node.style.textAlign = 'center'
     node.style.padding = '1rem'
-    node.style.maxWidth = '100%'
 }
 
 setTimeout( ()=>{
