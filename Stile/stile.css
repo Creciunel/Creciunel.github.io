@@ -59,10 +59,24 @@ ol {
     text-align: center;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 1020px) {
+    .video{
+        height: 240px;
+        width: 426px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
     .video{
         height: 144px;
         width: 256px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .video{
+        height: 112px;
+        width: 200px;
     }
 }
 
