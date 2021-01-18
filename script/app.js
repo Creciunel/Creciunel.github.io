@@ -13,7 +13,8 @@ function addStyleTo(node, text){
     node.style.color = 'red'
     node.style.backgroundColor = 'black'
     node.style.textAlign = 'center'
-    node.style.padding = '2rem'
+    node.style.padding = '1rem'
+    node.style.maxWidth = '100%'
 }
 
 setTimeout( ()=>{

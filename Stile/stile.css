@@ -31,8 +31,6 @@ body{
 
 .left-content{
     text-align: center;
-    margin-top: 5px;
-    margin-left: 10px;
     border: 2px solid rgb(31, 16, 16);
     border-radius: 1em;
 }
@@ -54,7 +52,6 @@ ol {
 .right-content{
     color: rgb(82, 197, 197);
     text-align: center;
-    margin-right: 10px;
 }
 /*Index*/
 
