@@ -1,27 +1,32 @@
 const tintelNews = document.querySelector('#news')
-const navTop = document.querySelector('#nav')
-const foot = document.querySelector('.page-footer')
+const navTop = document.querySelector('nav')
+const foot = document.querySelector('footer')
+const cherck = document.querySelector('#check1')
+const chekstd = document.querySelector('#chekstd')
 
-console.dir(navTop)
 
-setTimeout( () =>{
-    addStyleTo(tintelNews, "It's a main page of news")
-}, 4500)
-
-function addStyleTo(node, text){
-    node.textContent = text
-    node.style.color = 'red'
-    node.style.backgroundColor = 'black'
-    node.style.textAlign = 'center'
-    node.style.padding = '1rem'
+cherck.onclick = () => {
+    navTop.style.backgroundColor = 'black'
+    foot.style.backgroundColor = 'black'
+    foot.style.color = "#fff"
+    if(tintelNews){
+        console.dir(tintelNews)
+        tintelNews.innerText = 'This is a page of news'
+        tintelNews.style.color = 'red'
+        tintelNews.style.backgroundColor = 'black'
+        tintelNews.style.padding = '1rem'
+    }
 }
 
-setTimeout( ()=>{
-    navTop.style.backgroundColor = 'black'
-}, 5000)
-
-setTimeout( ()=>{
-    foot.style.backgroundColor = 'black'
-    foot.style.color = "white"
-}, 6000)
+chekstd.onclick = () => {
+    navTop.style.backgroundColor = ' rgba(92, 10, 60, 0.5)'
+    foot.style.backgroundColor = ' rgba(92, 10, 60, 0.5)'
+    foot.style.color = "#fff"
+    if(tintelNews){
+        tintelNews.innerText = 'This is a page of news'
+        tintelNews.style.color = 'rgb(82, 197, 197'
+        tintelNews.style.backgroundColor = '#fff'
+        tintelNews.style.padding = '1rem'
+    }
+}
 
