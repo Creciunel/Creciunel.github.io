@@ -4,3 +4,16 @@
 
 layout: home
 ---
+<h1>{{ page.title }}</h1>
+
+<p>{{ page.description }}</p>
+
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.excerpt }}</p>
+            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </li>
+    {% endfor %}
+</ul>
