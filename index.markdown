@@ -7,14 +7,25 @@ header:
   overlay_image: /assets/Cover.jpg
 ---
 
-<style>
+<!-- <style>
 .author__avatar {
   display: none !important;
 }
-</style>
+</style> -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFG663N58C"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFG663N58C');
+</script>
 
 
-<img src="/assets/Profil.jpg" alt="Cătălin Creciunel" style="display: block; margin: 1rem auto; width: 220px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+<img src="/assets/Profil.jpg" alt="Cătălin Creciunel" style="display: block; margin: 1rem auto; width: 420px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 
 
 ### Professional Profile
