@@ -4,7 +4,7 @@ title: "Cătălin Creciunel"
 subtitle: "Embedded Systems Engineer | PCB Designer | FPGA Enthusiast"
 author_profile: true
 header:
-  overlay_image: /assets/Random_number.jpg
+  overlay_image: /assets/Satelit_modul.png
 ---
 
 <!-- <style>
