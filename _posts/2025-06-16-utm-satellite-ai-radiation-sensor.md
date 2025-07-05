@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "AI-Based Radiation Sensor Developed for UTM Satellite Mission"
 date: 2025-06-16 11:09:00 +0300
 categories: projects space
@@ -8,6 +7,8 @@ image: /assets/Satelit_modul.png
 description: "Contributing to UTM’s satellite mission with a custom AI-powered cosmic radiation sensor based on FPGA technology and nanosensors under BIRDS-RPM project."
 tags: [UTM, satellite, AI, FPGA, nanosensors, space radiation, BIRDS-RPM]
 ---
+
+
 
 On **June 16, 2025**, the *Technical University of Moldova (UTM)* was featured in the media for preparing the launch of two nanosatellites. One of the key contributions involves the development of an **AI-based radiation sensing module** — a project I am actively involved in — under the **BIRDS-RPM international satellite mission**.
 
