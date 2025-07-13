@@ -1,9 +1,7 @@
 ---
-
-layout: default
 title: "Software Projects"
 permalink: /software/
----------------------
+---
 
 ### 🤖 Motor Control via UART + ROS2 (ICG Engineering)
 

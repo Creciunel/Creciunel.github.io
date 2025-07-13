@@ -50,7 +50,7 @@ Presented by researchers of the **National Center for Materials Study and Testin
 
 ### 🖼️ Certificate of Award
 
-<img src="/assets/ICE-USV_2023_Gold_Creciunel%20C.png" width="100%" alt="Gold Medal Diploma (PDF)" />
+<img src="/assets/images/ICE-USV_2023_Gold_Cr.png" width="100%" alt="Gold Medal Diploma (PDF)" />
 
 *Committee Chairman:* Prof. Mihai Dimian  
 *Scientific Committee:* Prof. Dr. Ing. L. Dan Milici

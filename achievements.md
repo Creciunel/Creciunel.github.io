@@ -1,9 +1,7 @@
 ---
-
-layout: default
 title: "Achievements & Publications"
 permalink: /achievements/
--------------------------
+---
 
 ---
 

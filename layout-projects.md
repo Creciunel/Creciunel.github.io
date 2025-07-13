@@ -1,9 +1,7 @@
 ---
-
 title: "PCB & Layout Projects"
 permalink: /layout-projects/
-layout: default
----------------
+---
 
 ---
 

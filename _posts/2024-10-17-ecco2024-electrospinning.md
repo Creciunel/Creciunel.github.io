@@ -13,7 +13,7 @@ tags: [electrospinning, nanomaterials, FreeRTOS, Arduino, PlatformIO]
 📄 [🔗 Abstract (pages 66–67, PDF)](https://ibn.idsi.md/sites/default/files/imag_file/66-67_78.pdf)  
 📘 [🔗 Book of Abstracts](https://ecco.utm.md/wp-content/uploads/2024/12/IC-ECCO-2024-AbstractBookBN.pdf)
 
-![Presentation Process](/assets/EccoPresenatting.jpeg)
+![Presentation Process](/assets/images/EccoPresenatting.jpeg)
 ---
 
 ### ✨ Abstract Summary

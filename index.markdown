@@ -1,36 +1,19 @@
 ---
 layout: home
-title: "Cătălin Creciunel"
+title: "Embedded Solutions"
+tagline: "Hardware and software solutions for smart sensors and interfaces"
 subtitle: "Embedded Systems Engineer | PCB Designer | FPGA Enthusiast"
 author_profile: true
 header:
-  overlay_image: /assets/Satelit_modul.png
+  overlay_image: assets/images/canvas.jpg
+  overlay_filter: "0.5"
 ---
-
-<!-- <style>
-.author__avatar {
-  display: none !important;
-}
-</style> -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFG663N58C"></script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CFG663N58C');
-</script>
 
 ### Professional Profile
 
 Motivated Embedded Hardware and Software Engineer with over 3 years of experience in analog and digital circuit development, especially with STM32- and ESP32-based systems. Hands-on practice in prototyping, module testing, transitioning to production, and product lifecycle support. Skilled in power electronics, motor control (PID), control systems, and embedded integration. Proficient in ECAD tools like Altium Designer and KiCad. Strong interest in semiconductor technologies and servo-drive systems. English fluent; German at B1/B2 level.
 
 ---
-
-<img src="/assets/Profil.jpg" alt="Cătălin Creciunel" style="display: block; margin: 1rem auto; width: 420px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 
 Feel free to explore the following sections:
 

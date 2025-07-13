@@ -8,11 +8,9 @@ description: "Contributing to UTM’s satellite mission with a custom AI-powered
 tags: [UTM, satellite, AI, FPGA, nanosensors, space radiation, BIRDS-RPM]
 ---
 
-
-
 On **June 16, 2025**, the *Technical University of Moldova (UTM)* was featured in the media for preparing the launch of two nanosatellites. One of the key contributions involves the development of an **AI-based radiation sensing module** — a project I am actively involved in — under the **BIRDS-RPM international satellite mission**.
 
-![Satellite Module](/assets/Satelit_modul.png)
+![Satellite Module](/assets/images/Satelit/Satelit_modul.png)
 
 > “I am designing one of the modules of this satellite. My module aims to measure the level of cosmic radiation — a critical parameter for astronauts. It consists of two radiation sensors (analog and digital), followed by the circuit design stage.”  
 > — *Cătălin Crăciunel, interview for TVR Moldova*
@@ -54,4 +52,11 @@ The innovation lies in bringing intelligence to the **edge**: one level of AI is
 
 ---
 
+## Last Update: June 16, 2025
+
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+    <img src="/assets/images/Satelit/Front-side.jpg" alt="Satellite Module Front Side" width="350"> 
+    <img src="/assets/images/Satelit/back-side.jpg" alt="Satellite Module Back Side" width="350">
+</div>
+---
 📌 *This project is realized in collaboration with UTM and LaSEINE Japan, under the BIRDS-RPM satellite program.*

@@ -8,8 +8,8 @@ tags: [automotive engineering, CROSSCOMP, webinars, embedded, TUM]
 📍 **Event:** *Webinars on Automotive Engineering Modern Topics and Trends*  
 📅 **Date:** April 2021  
 🏛️ **Organizer:** CROSSCOMP project – TUM, TUIASI, UASM  
-📄 [📑 Official Work Plan (CROSSCOMP)](https://crosscomp.ro)  
-📜 [🎓 Certificate](/assets/Automotiv-Course.jpg)
+📄 [📑 Official Work Plan (CROSSCOMP)](https://crosscomp.eu/information/)  
+📜 [🎓 Certificate](/assets/images/Automotiv-Course.jpg)
 
 ---
 
@@ -41,7 +41,7 @@ The webinars were part of a broader training initiative that included lab upgrad
 
 ### 🎓 Certificate of Participation
 
-<img src="/assets/Automotiv-Course.jpg" alt="CROSSCOMP Certificate" width="100%" style="margin-top: 1rem;" />
+<img src="/assets/images/Automotiv-Course.jpg" alt="CROSSCOMP Certificate" width="100%" style="margin-top: 1rem;" />
 
 ---
 

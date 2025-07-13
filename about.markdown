@@ -1,11 +1,13 @@
 ---
-layout: default
 title: "About Me"
 permalink: /about/
------------
-
+tags: [about, resume, portfolio, description]
+description: "About Me"
 ---
 
+<img src="/assets/images/BPU/Presentation_BPU.jpg" alt="Cătălin Creciunel" style="display: block; margin: 1rem auto; width: 420px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+
+---
 ### 🎓 Education
 
 * M.Sc. in Microelectronics and Nanotechnologies — Technical University of Moldova (2023–2025)
@@ -45,5 +47,3 @@ permalink: /about/
 * **Other:** ROS2, UART/SPI/I2C/CAN, signal acquisition, embedded UI design
 
 ---
-
-Feel free to contact me at [catalincreciunel@gmail.com](mailto:catalincreciunel@gmail.com)

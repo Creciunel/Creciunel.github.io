@@ -13,7 +13,7 @@ Between **June 23–26, 2025**, the **IEEE International Black Sea Conference on
 
 📍 Official website: [blackseacom2025.ieee-blackseacom.org](https://blackseacom2025.ieee-blackseacom.org)
 
-![Event Banner](/assets/IEEECover2025.jpg)
+![Event Banner](/assets/images/ieee-blackseacom/IEEECover2025.jpg)
 
 ---
 
@@ -46,7 +46,9 @@ The project was carried out in collaboration with:
 
 ## 📸 Conference presentation
 
-![Presentation](/assets/IEEEPresentation.jpg)
+![Conference Hall](/assets/images/ieee-blackseacom/ieee-blackseacom-presebting.png)
+
+![Presentation](/assets/images/ieee-blackseacom/IEEEPresentation.jpg)
 
 ---
 
