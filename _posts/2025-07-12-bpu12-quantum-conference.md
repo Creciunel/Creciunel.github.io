@@ -44,7 +44,7 @@ The Organising Committee consisted of:
 - **Stefan Kuksky** (Synchrotron SOLEIL, Paris)
 - **Ioana Pinteli** (NIMP, Bucharest)
 - **Victor Malka** (ELI-NP)
-- **Radu Constantinescu** (University of Craiova) - email: RSL@zurich.ibm.com
+- **Radu Constantinescu** (University of Craiova) 
 
 ---
 
