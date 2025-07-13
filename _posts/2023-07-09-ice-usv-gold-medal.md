@@ -2,6 +2,7 @@
 title: "🏅 Gold Medal at ICE-USV 2023 for Remote Temperature Control System"
 date: 2023-07-09
 categories: [competition, awards, embedded, research]
+author: "Creciunel Catarina"
 tags: [temperature control, ESP32, FreeRTOS, nanostructures, zinc]
 ---
 

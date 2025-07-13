@@ -2,6 +2,7 @@
 title: "🏆 DevHealth & ESP32 Controller Win Multiple Awards at 'Sergiu Rădăuțan' 2023"
 date: 2023-05-10
 categories: [competition, awards, embedded]
+author: "Creciunel Catarina"
 tags: [STM32, ESP32, FreeRTOS, biomedical, temperature control]
 ---
 

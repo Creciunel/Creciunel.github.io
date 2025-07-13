@@ -2,6 +2,7 @@
 title: "ECCO 2024 – Electrospinning Setup for Nanofibers Fabrication"
 date: 2024-10-17
 categories: [conference, research, embedded]
+author: "Creciunel Catarina"
 tags: [electrospinning, nanomaterials, FreeRTOS, Arduino, PlatformIO]
 ---
 

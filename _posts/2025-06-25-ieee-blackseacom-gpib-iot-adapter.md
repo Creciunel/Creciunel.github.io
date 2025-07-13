@@ -2,6 +2,7 @@
 title: "IEEE BlackSeaCom 2025 – GPIB Laboratory Instruments Brought to IoT"
 date: 2025-06-25
 categories: [projects, events]
+author: Cătălin Creciunel
 image: /assets/IEEECover2025.jpg
 tags: [ieee, conference, iot, gpib, microcontroller, instrumentation]
 description: "Presentation of a microcontroller-based adapter for bringing GPIB lab instruments online during the IEEE International Black Sea Conference on Communications and Networking held in Chișinău, June 23–26, 2025."

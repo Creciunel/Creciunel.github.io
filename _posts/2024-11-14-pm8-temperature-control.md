@@ -2,6 +2,7 @@
 title: "PM-8 2024 – Remote Temperature Control System for ZnO Fabrication"
 date: 2024-11-14
 categories: [conference, research, embedded]
+author: "Creciunel Catarina"
 tags: [ZnO, ESP32, FreeRTOS, temperature control, nanostructures]
 ---
 

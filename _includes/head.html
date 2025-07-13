@@ -4,10 +4,92 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {%- seo -%}
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <!-- Include academicons for Google Scholar icon -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<style>
+.author-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.author-avatar img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e9ecef;
+  transition: none !important;
+}
+
+.author-details {
+  flex: 1;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .author-bio {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #495057;
+  }
+}
+
+.author-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.author-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 15px;
+  background: white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #2c3e50;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.link-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+</style>
 
 {%- feed_meta -%}
 {%- if jekyll.environment == 'production' and site.google_analytics -%}

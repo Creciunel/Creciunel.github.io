@@ -2,6 +2,7 @@
 title: "🚗 CROSSCOMP Webinars & Training – Automotive Engineering Trends"
 date: 2021-04-22
 categories: [education, training, automotive]
+author: "Creciunel Catarina"
 tags: [automotive engineering, CROSSCOMP, webinars, embedded, TUM]
 ---
 

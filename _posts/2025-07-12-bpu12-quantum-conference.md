@@ -2,13 +2,13 @@
 title: "Exploring Quantum Frontiers at BPU12 Congress"
 description: "Participation at the 12th International Congress of the Balkan Physical Union, July 2025, including advanced lectures, lab visits, and poster presentation on intelligent radiation sensors for space applications."
 date: 2025-07-12
-tags: [conference, quantum, physics, research, poster, international]
+author: Cătălin Creciunel
+tags: [conference, quantum, physics, research, poster, international, BPU12, Moldova, Romania, Bucharest]
 image: /assets/images/BPU/Poster_v2.jpg
 ---
+From **July 4 to July 12, 2025**, I had the great opportunity to participate in the **12th International Congress of the Balkan Physical Union (BPU12)** held in **Bucharest, Romania**.
 
 ![Cover image](https://bpu12.ucv.ro/wp-content/uploads/2025/01/POSTER.jpg)
-
-From **July 4 to July 12, 2025**, I had the great opportunity to participate in the **12th International Congress of the Balkan Physical Union (BPU12)** held in **Bucharest, Romania**.
 
 The congress brought together leading scientists, researchers, and students from across the Balkans and Europe, creating a dynamic environment for exchanging ideas and exploring cutting-edge topics in physics.
 
@@ -97,3 +97,22 @@ Participating in **BPU12** was a truly transformative experience. From cutting-e
 ---
 
 *Post authored by Cătălin Creciunel, July 2025*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Fabrication and characterization of novel iron oxide aeromaterial",
+  "author": [
+    {"@type": "Person", "name": "Catalin Creciunel"},
+    {"@type": "Person", "name": "Tatiana Galatonova"},
+    ...
+  ],
+  "url": "https://creciunel.github.io/2025/07/12/bpu12-quantum-conference.html",
+  "datePublished": "2025-07-15",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Technical University of Moldova"
+  }
+}
+</script>

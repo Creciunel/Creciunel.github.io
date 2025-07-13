@@ -3,6 +3,7 @@ layout: home
 title: "Embedded Solutions"
 tagline: "Hardware and software solutions for smart sensors and interfaces"
 subtitle: "Embedded Systems Engineer | PCB Designer | FPGA Enthusiast"
+tags: [about, resume, portfolio, description, main, home, index, blog, projects, achievements, publications]
 author_profile: true
 header:
   overlay_image: assets/images/canvas.jpg
