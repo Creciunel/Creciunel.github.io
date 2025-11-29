@@ -85,7 +85,7 @@ description: "About Me"
     <h4>Research Intern @ NCMST, UTM</h4>
     <p>2021–present<br><em>Nanomaterials, sensors, and automation.</em><br>
     <a href="https://cnts.utm.md/">CNTs Research Group</a> | 
-    <a href="http://www.ncmst.utm.md/en/team">ZnO Nanostructures</a>
+    <a href="https://ncmst.utm.md/en/team">ZnO Nanostructures</a>
     </p>
   </div>
 </div>

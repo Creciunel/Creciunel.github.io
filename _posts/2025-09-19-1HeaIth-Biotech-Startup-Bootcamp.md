@@ -4,7 +4,8 @@ date: 2025-09-19
 tags: [events, 1health, biotech, startup, bootcamp]
 description: "Between September 1–19, 2025, I participated in the 1HeaIth Biotech Startup Bootcamp, a three-week program held in Timișoara, Romania, dedicated to bridging science and entrepreneurship in biotechnology."
 header:
-    image: https://scontent.fkiv9-2.fna.fbcdn.net/v/t39.30808-6/545141154_1361857525943841_5978174598109511319_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kwhq_0xLQrIQ7kNvwGbmm6t&_nc_oc=AdnJtzcqeaeoucUVXuompGDuYZSp54Y2X3Xfr4FjXoM829nQSqV_er1LH0ne58BFSSs&_nc_zt=23&_nc_ht=scontent.fkiv9-2.fna&_nc_gid=hwMK9NgnAdLxihdonEADGQ&oh=00_AffNbAlPKfoVpHR2NxsGzegdVEHzctuHXt8p8iXKphCDYw&oe=68F87CD9
+    image: https://jurnaldesustenabilitate.ro/wp/wp-content/uploads/2025/05/1Health-Biotech-Startup-Bootcamp.jpg
+
 ---
 
 Between **September 1–19, 2025**, I participated in the **1HeaIth Biotech Startup Bootcamp – From Lab to Market**,  
@@ -49,13 +50,32 @@ This phase emphasized the importance of collaboration and multidisciplinary thin
 
 ### 📸 Highlights
 
-<div class="gallery">
+<div class="project-gallery">
   <img src="/assets/images/1HeaIth/Diploms1.jpg" alt="Certificate ceremony" width="48%">
   <img src="/assets/images/1HeaIth/Diploms2.jpg" alt="Closing session group photo" width="48%">
   <img src="/assets/images/1HeaIth/Socialization.jpg" alt="Networking and discussion session" width="48%">
   <img src="https://media.licdn.com/dms/image/v2/D4E22AQF9pzKASz2zCQ/feedshare-shrink_2048_1536/B4EZlinj9tGYA0-/0/1758296169002?e=1762387200&v=beta&t=Tfj3hV95IcRX4dVc-7uO_4wKgoPrXYFZbW1b-aDhFuI" alt="Workshop photo during training" width="48%">
 </div>
 
+<style>
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.project-gallery img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+.project-gallery img:hover {
+  transform: scale(1.03);
+}
+</style>
 ---
 
 ### 🔗 Learn More
