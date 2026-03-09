@@ -21,8 +21,8 @@ bio: |
   treatment and anodization techniques. His expertise spans embedded software 
   development in Python and C/C++, hardware design using CAD tools, and 
   nanotechnology research including semiconductor and composite nanofiber 
-  production. Cătălin is dedicated to advancing technology through continuous l
-  earning and innovative contributions to microelectronics and embedded 
+  production. Cătălin is dedicated to advancing technology through continuous 
+  learning and innovative contributions to microelectronics and embedded 
   systems.
 
 affiliations:
@@ -31,18 +31,16 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:creciunelcatalin@gmail.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/Creciunel
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://www.linkedin.com/in/c%C4%83t%C4%83lin-creciunel-5b42b71b3/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=f3_envYAAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0008-4898-2556
 
 interests:
   - Electrospinning tehnique
@@ -50,53 +48,70 @@ interests:
   - Embedded systems
   - Microelectronics
   - Nanotechnology
-  
+
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
+  - degree: MSc Microelectronics and Nanotechnologies
+    institution: Technical University of Moldova
+    start: 2023-09-01
+    end: 2025-06-30
+  - degree: BSc Microelectronics and Nanotechnologies
+    institution: Technical University of Moldova
+    start: 2019-09-01
+    end: 2023-06-30
+  # - degree: Online Course - Automotive Engineering
+  #   institution: Gheorghe Asachi Technical University of Iași
+  #   date: 2021-01-01
+  - degree: Junior College Diploma - Automotive diagnostics and homologation
+    institution: Center of Excellence in Transport, Chișinău
     start: 2015-09-01
     end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Embedded Software Developer
+    org: Stein Automation
+    start: 2026-01-15
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      Developing embedded software solutions for automation systems.
+  - role: Embedded Consultant
+    org: Ferrotec Europe GmbH
+    start: 2025-04-01
+    end: 2025-05-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Embedded systems consulting for electron beam deposition controller.
+  - role: Software Engineer
+    org: Schölly Fiberoptic GmbH
+    start: 2023-01-01
+    end: 2024-12-31
+    summary: |
+      C++ firmware development, manual and semi-automated testing, user interface tools.
+  - role: Embedded Systems Engineer
+    org: ICG Engineering
+    start: 2021-01-01
+    end: 2023-12-31
+    summary: |
+      Motor controllers, state machines, PCB and firmware development for STM32, ESP32, and AVR microcontrollers.
+  - role: Research Intern
+    org: NCMST, UTM
+    start: 2021-01-01
+    summary: |
+      Research on nanomaterials, sensors, and automation systems.
 
 skills:
   - name: Technical Skills
     items:
       - label: Python
         level: 5
-      - label: Machine Learning
+      - label: c++
         level: 5
-      - label: Cloud Computing
+      - label: C
         level: 4
+      - label: CAD Tools
+        level: 4
+      - label: Thermal Treatment & Anodization
+        level: 5
+      - label: Nanotechnology Research
+        level: 5
+
   - name: Research & Communication
     items:
       - label: Academic Writing
@@ -107,16 +122,39 @@ skills:
         level: 4
 
 languages:
-  - name: English
+  - name: Romanian
     level: 5
     label: Native
-  - name: Spanish
+  - name: English
+    level: 4
+    label: Fluent
+  - name: German
+    level: 4
+    label: Fluent
+  - name: Russian
     level: 4
     label: Fluent
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+  - title: 3rd Prize for Best Poster
+    awarder: OPEN DOOR TO THE FUTURE SCIENTIFIC COMMUNICATIONS OF YOUNG RESEARCHERS 6th EDITION
+    date: "2025-11-19"
+    url: https://icmpp.ro/macroyouth2025/index.php
+    summary: |
+      Poster presentation on "Optical and structural characterization of Fe3O4 aeromaterial".
+    icon: hero/trophy
+
+  - title: 2nd Place & UTM Special Prize
+    awarder: International Student Contest "Ingineria Sistemelor Microelectronice – Sergiu Rădăuțan"
+    date: "2023-05-22"
+    url: https://utm.md/blog/2023/05/22/concursul-international-studentesc-ingineria-sistemelor-microelectronice-sergiu-radautan-2023-si-a-desemnat-invingatorii/
+    summary: |
+      Project DevHealth — STM32 & ESP32-based Patient Monitor. Team: Cătălin Creciunel, Daniel Țîrche; Advisor Prof. Adrian Bîrnaz.
+    icon: hero/trophy
+  - title: Gold Medal
+    awarder: ICE-USV 2023
+    date: "2023-07-04"
+    url: https://cris.utm.md/bitstream/5014/1750/1/ICE-USV_2023_Gold_Creciunel%20C..pdf
+    summary: |
+      Remote intelligent temperature control system for thermal treatment of zinc and copper foils.
     icon: hero/trophy
