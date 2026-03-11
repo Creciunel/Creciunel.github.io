@@ -6,7 +6,7 @@ draft: false
 
 # Autori (Hugo Blox folosește taxonomii pentru autori)
 authors:
-  - "Creciunel Catarina"
+  - "me"
 
 # Taxonomii
 categories:
