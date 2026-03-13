@@ -35,20 +35,29 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Sau '22'
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'academic-cv/package.json'
 
-      - name: Install Tailwind CSS
-        # Instalăm Tailwind global în mediul de build pentru ca Hugo să îl poată apela
-        run: npm install -g tailwindcss
+      - name: Install Dependencies
+        # Intrăm în folderul academic-cv și instalăm pachetele necesare
+        working-directory: academic-cv
+        run: |
+          npm install -D tailwindcss postcss autoprefixer
+          npm install
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
+          hugo-version: '0.153.0'
           extended: true
 
       - name: Build with Hugo
-        run: hugo --gc --minify
+        # Executăm build-ul în folderul academic-cv
+        working-directory: academic-cv
+        run: |
+          hugo --gc --minify
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
