@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["hugo"] # Am pus 'hugo' pentru că ai zis că acesta e branch-ul tău principal
   workflow_dispatch:
 
 permissions:
@@ -17,12 +17,13 @@ concurrency:
 defaults:
   run:
     shell: bash
+    working-directory: academic-cv # <--- Îi spunem să execute toate comenzile aici
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.121.0 # Verifică versiunea ta cu 'hugo version'
+      HUGO_VERSION: 0.121.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,11 +36,13 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
       - name: Build with Hugo
+        # Executăm hugo în folderul corect
         run: hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          # Important: Artifact-ul se află acum în academic-cv/public
+          path: ./academic-cv/public 
 
   deploy:
     environment:
