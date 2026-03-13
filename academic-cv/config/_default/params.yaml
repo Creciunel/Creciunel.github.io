@@ -24,7 +24,7 @@ hugoblox:
     description: "Software Hardware Developer. Research nano technology, semiconductors."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      linkedin: "MakeOwnable"              # LinkedIn profile URL or handle
+      linkedin: "https://www.linkedin.com/in/c%C4%83t%C4%83lin-creciunel-5b42b71b3/"              # LinkedIn profile URL or handle
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -153,6 +153,7 @@ hugoblox:
   # Content rendering and behavior
   # ────────────────────────────────────────────────────────────────────────────
   content:
+    sharing: false
     # Math rendering
     math:
       enable: false
@@ -165,6 +166,7 @@ hugoblox:
     # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
+
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEARCH
@@ -217,7 +219,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "googlef9de9ba6372cb9ee"
     bing: ""
     baidu: ""
     yandex: ""

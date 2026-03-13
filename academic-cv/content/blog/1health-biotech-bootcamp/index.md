@@ -6,7 +6,7 @@ draft: false
 
 # Autori
 authors:
-  - "Cătălin Crăciunel"
+  - "me"
 
 # Taxonomii
 tags:
@@ -30,6 +30,8 @@ links:
     icon_pack: fas
     name: Official Event Page
     url: https://www.biomentorhub.ro/events/1health
+
+# show_author_card: false
 ---
 
 Between **September 1–19, 2025**, I participated in the **1HeaIth Biotech Startup Bootcamp – From Lab to Market**, an intensive three-week program **held in Timișoara, Romania**, dedicated to helping researchers and innovators bring biotech ideas from the lab to real-world markets.

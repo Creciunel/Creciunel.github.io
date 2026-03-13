@@ -31,6 +31,10 @@ image:
 
 # Link-uri media
 links:
+  - icon: book
+    icon_pack: fas
+    name: Satellite Documentation
+    url: https://birds-rp.birds-project.com/satellite-documentation/
   - icon: tv
     icon_pack: fas
     name: TVR Moldova Report
@@ -66,6 +70,16 @@ This mission is part of **J-CUBE**, coordinated by **LaSEINE (Japan)** and hoste
 4. **Obj-004**: Assemble and integrate the complete payload stack on BIRDS platform.
 5. **Obj-005**: Receive, analyze and adjust data from ground stations for further evolution.
 6. **Obj-006**: Educate students in space-grade systems and advanced technologies.
+
+### 🔬 Technical Implementation (2026 Paper)
+
+The reference radiation module utilizes a dual-channel detection strategy, as detailed in my recent publication:
+
+* **Dose Rate Estimation:** The **AL54 Alpha Sensor** handles digital pulse counting (proportional to mSv/h).
+* **Cumulative Dose:** The **VT01 RADFET** measures total ionizing dose from 1 cGy up to 1 kGy.
+* **Data Handling:** An **ATmega1284** microcontroller processes the signals and communicates via **I²C** with the main onboard computer.
+
+[!NOTE] The paper describing the design and functionality of this module is available [here](/publications/birds-rpm-radiation-sensor/).
 
 ## Media Mentions
 

@@ -1,0 +1,7 @@
+section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl {
+    display: none !important;
+}
+
+.powered-by.text-center.text-sm.opacity-80.py-1 {
+    display: none !important;
+}

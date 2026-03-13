@@ -7,6 +7,8 @@ draft: false
 # Autori
 authors:
   - "me"
+  - "Daniel Țîrche"
+  - "Gheorghe Creciunel"
 
 # Taxonomii
 categories:
