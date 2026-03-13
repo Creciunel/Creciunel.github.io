@@ -31,13 +31,23 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Sau '22'
+
+      - name: Install Tailwind CSS
+        # Instalăm Tailwind global în mediul de build pentru ca Hugo să îl poată apela
+        run: npm install -g tailwindcss
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
+
       - name: Build with Hugo
-        # Executăm hugo în folderul corect
         run: hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
