@@ -45,9 +45,8 @@ links:
     url: "https://icmpp.ro/macroyouth2025/files/ProgramandBookofAbstractMacroYouth2025.pdf"
 ---
 
-{{< callout note >}}
-🏆 **Award Recognition:** This presentation was honored with the **III Prize for Best Poster (PP15)** at the MacroYouth 2025 Conference in Iași, Romania.
-{{< /callout >}}
+> [!NOTE]
+> **Award Recognition:** This presentation was honored with the **III Prize for Best Poster (PP15)** at the MacroYouth 2025 Conference in Iași, Romania.
 
 ### Conference Overview
 The **MacroYouth 2025 Conference**, organized by the “Petru Poni” Institute of Macromolecular Chemistry, focused on the latest developments in macromolecular and materials science.

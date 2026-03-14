@@ -46,9 +46,8 @@ links:
     url: https://ecco.utm.md/wp-content/uploads/2024/12/IC-ECCO-2024-AbstractBookBN.pdf
 ---
 
-{{< callout note >}}
-🏆 **Recognition:** This work was recognized as an **award-winning abstract** at the ECCO 2024 conference for its innovative approach to open-source laboratory instrumentation.
-{{< /callout >}}
+> [!NOTE]
+> **Recognition:** This work was recognized as an **award-winning abstract** at the ECCO 2024 conference for its innovative approach to open-source laboratory instrumentation.
 
 ### System Architecture
 

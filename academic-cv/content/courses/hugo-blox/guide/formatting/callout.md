@@ -159,11 +159,8 @@ You can customize the title of any callout:
 
 The old shortcode syntax still works but shows a deprecation warning:
 
-```markdown
-{{</* callout note */>}}
+> [!NOTE]
 This still works but is deprecated. Use the Markdown syntax above!
-{{</* /callout */>}}
-```
 
 ### CSS Customization
 

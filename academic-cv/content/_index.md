@@ -46,7 +46,7 @@ sections:
 
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
 
-        Please reach out to collaborate 😃
+        For collaborations, please contact me at <a href="mailto:creciunelcatalin@gmail.com">creciunelcatalin@gmail.com</a>.
     design:
       columns: '1'
   - block: collection

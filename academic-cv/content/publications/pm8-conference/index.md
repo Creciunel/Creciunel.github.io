@@ -54,6 +54,5 @@ The automated annealing process enabled by this setup allows for highly repeatab
 
 ---
 
-{{< callout note >}}
-You can access the full collection of conference posters here: [PM-8 Posters Archive (ZIP)](http://www.physics.pub.ro/Site_Conferinta_PM-8/Conference_Posters.zip)
-{{< /callout >}}
+> [!NOTE]
+> You can access the full collection of conference posters here: [PM-8 Posters Archive (ZIP)](http://www.physics.pub.ro/Site_Conferinta_PM-8/Conference_Posters.zip)
