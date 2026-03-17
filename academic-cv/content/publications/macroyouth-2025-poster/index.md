@@ -34,6 +34,10 @@ featured: true
 projects:
   - advanced-functional-materials
 
+# image:
+#   filename: "https://icmpp.ro/events/conferences/macroyouth/MacroYouth2025.png"
+#   caption: "MacroYouth 2025"
+
 links:
   - icon: trophy
     icon_pack: fas

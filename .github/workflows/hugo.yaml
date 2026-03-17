@@ -52,11 +52,18 @@ jobs:
           hugo-version: '0.153.0'
           extended: true
 
+      # - name: Build with Hugo
+      #   # Executăm build-ul în folderul academic-cv
+      #   working-directory: academic-cv
+      #   run: |
+      #     hugo --gc --minify
+
       - name: Build with Hugo
-        # Executăm build-ul în folderul academic-cv
         working-directory: academic-cv
         run: |
-          hugo --gc --minify
+          npm install -g pnpm
+          pnpm install
+          pnpm run build  
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
