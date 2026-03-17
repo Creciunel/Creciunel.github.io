@@ -62,8 +62,8 @@ jobs:
         working-directory: academic-cv
         run: |
           npm install -g pnpm
-          pnpm install
-          pnpm run build  
+          pnpm install --no-frozen-lockfile
+          pnpm run build 
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
