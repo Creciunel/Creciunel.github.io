@@ -13,3 +13,7 @@ This represint a overview of my academic and professional background, including 
 - Netlify: A cloud-based platform used for deploying and hosting the website.
 - Academic CV Theme: A Hugo theme designed for creating academic CVs and personal websites, used as the basis for the website's design and structure.
 
+## FOR SEO and analytics
+- Google Analytics: A web analytics service offered by Google that tracks and reports website traffic, used to monitor and analyze the website's performance and user behavior. [Google Analytics](https://analytics.google.com/analytics/web/)
+- Google Search Console: A web service offered by Google that allows webmasters to check indexing status [Google Search Console](https://search.google.com/search-console?resource_id=https%3A%2F%2Fcreciunel.github.io%2F)
+- Bing Webmaster Tools: A web service offered by Microsoft that allows webmasters to check indexing status and optimize the visibility of their websites in Bing search results. [Bing Webmaster Tools](https://www.bing.com/webmasters/home?siteUrl=https://creciunel.github.io/)
