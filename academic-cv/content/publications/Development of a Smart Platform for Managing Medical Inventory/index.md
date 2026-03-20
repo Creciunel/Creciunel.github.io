@@ -64,6 +64,12 @@ image:
   focal_point: ''
   preview_only: false
 
+url_custom:
+  - name: "Official Publication"
+    url: https://link.springer.com/chapter/10.1007/978-3-032-06497-4_60
+  - name: "Local Instrumentul Bibliometric National (IBN) Repository"
+    url: https://ibn.idsi.md/en/vizualizare_articol/239544 
+  
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.

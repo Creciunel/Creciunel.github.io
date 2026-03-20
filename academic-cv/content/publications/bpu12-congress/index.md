@@ -29,6 +29,10 @@ links:
     icon_pack: fas
     name: "Book of Abstracts"
     url: "https://indico.bpu11.info/event/3/book-of-abstracts.pdf"
+
+url_custom:
+  - name: "Original event page"
+    url: "https://bpu12.ucv.ro/"
 ---
 
 From **July 4 to July 12, 2025**, I had the great opportunity to participate in the **12th International Congress of the Balkan Physical Union (BPU12)** in Bucharest.

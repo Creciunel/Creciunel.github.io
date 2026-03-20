@@ -200,7 +200,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
     google:
-      measurement_id: ""                # Google Analytics 4: G-XXXXXXXXXX
+      measurement_id: "G-CFG663N58C"                # Google Analytics 4: G-XXXXXXXXXX
     google_tag_manager:
       container_id: ""                  # GTM-XXXXXXX
     plausible:
@@ -210,7 +210,7 @@ hugoblox:
     pirsch:
       site_id: ""
     clarity:
-      project_id: ""
+      project_id: "vypr1kv5vh"                # Microsoft Clarity: e.g., abcdef1234
     baidu:
       site_id: ""
 
@@ -289,3 +289,6 @@ hugoblox:
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
+
+  features:
+    image_processing: true

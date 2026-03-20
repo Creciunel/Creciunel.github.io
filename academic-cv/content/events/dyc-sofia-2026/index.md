@@ -25,7 +25,7 @@ tags: [DYC, EUSDR, Policy, Sofia, European Union, Youth Advocacy]
 authors:
   - "me"
 
-organization: "EU Strategy for the Danube Region (EUSDR)"
+organizer: "EU Strategy for the Danube Region (EUSDR)"
 
 links:
 - icon: file-pdf

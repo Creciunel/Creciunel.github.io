@@ -72,6 +72,11 @@ image:
 projects:
   - photocatalytic-nanomaterials
 
+url_custom:
+  - name: "Official Publication"
+    url: https://ieeexplore.ieee.org/document/11193898
+  - name: "ResearchGate"
+    url: https://www.researchgate.net/publication/396582907_Upgrading_GPIB_Instruments_with_IoT_A_Microcontroller_Solution_for_Local_Network_Control_of_the_Laboratory_Devices
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
