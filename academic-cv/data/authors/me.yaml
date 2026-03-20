@@ -30,6 +30,7 @@ affiliations:
     url: https://ncmst.utm.md/en
 
 links:
+
   - icon: at-symbol
     url: mailto:creciunelcatalin@gmail.com
     label: E-mail Me
@@ -41,6 +42,10 @@ links:
     url: https://scholar.google.com/citations?user=f3_envYAAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/0009-0008-4898-2556
+  - icon: heart
+    icon_pack: fas
+    link: 'https://github.com/sponsors/creciunel'
+  
 
 interests:
   - Electrospinning tehnique

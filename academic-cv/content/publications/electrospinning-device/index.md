@@ -26,6 +26,9 @@ tags:
 
 featured: false
 
+projects:
+  - advanced-electrochemical-characterization
+
 links:
   - icon: pdf
     icon_pack: fas

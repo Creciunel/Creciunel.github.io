@@ -106,7 +106,7 @@ hugoblox:
     style: minimal                      # minimal | columns | centered
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: ""
+    text: '<a href="https://github.com/sponsors/Creciunel" target="_blank" rel="noopener"><i class="fas fa-heart" style="color: #db61a2;"></i> Sponsor me on GitHub</a>'
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

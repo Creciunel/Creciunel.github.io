@@ -31,6 +31,9 @@ tags:
 
 featured: true
 
+projects:
+  - electrospinning-setup-ecco
+
 links:
   - icon: trophy
     icon_pack: fas

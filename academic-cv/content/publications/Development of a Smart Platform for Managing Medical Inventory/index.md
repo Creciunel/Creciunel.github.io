@@ -64,6 +64,9 @@ image:
   focal_point: ''
   preview_only: false
 
+projects:
+  - advanced-electrochemical-characterization
+
 url_custom:
   - name: "Official Publication"
     url: https://link.springer.com/chapter/10.1007/978-3-032-06497-4_60

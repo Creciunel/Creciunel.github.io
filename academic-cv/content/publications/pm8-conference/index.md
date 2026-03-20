@@ -16,6 +16,9 @@ image:
 
 featured: true
 
+projects:
+  - temperature-controller
+  
 links:
   - icon: file-pdf
     icon_pack: fas

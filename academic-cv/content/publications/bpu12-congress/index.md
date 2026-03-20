@@ -33,6 +33,9 @@ links:
 url_custom:
   - name: "Original event page"
     url: "https://bpu12.ucv.ro/"
+
+projects:
+  - intelligent-radiation-sensor
 ---
 
 From **July 4 to July 12, 2025**, I had the great opportunity to participate in the **12th International Congress of the Balkan Physical Union (BPU12)** in Bucharest.
