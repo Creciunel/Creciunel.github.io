@@ -2,7 +2,11 @@
 title: "Danube Youth Council Meeting: Strategic Governance and Youth Advocacy"
 event: "DYC Spring Session 2026"
 event_url: "https://danube-region.eu/"
-location: "Sofia, Bulgaria"
+location:
+  city: "Sofia"
+  country: "Bulgaria"
+  address: "115 N, м. Къро, Boulevard Tsarigradsko shose Blvd, 1784 Sofia, Bulgaria"
+
 summary: "Participation as a Spokesperson at the DYC session to strengthen the role of youth in EU macro-regional strategies (EUSDR)."
 abstract: "A deep dive into the governance mechanisms of the Danube region, focusing on the dialogue between youth and policy makers from the Bulgarian Presidency and the European Commission."
 
@@ -12,6 +16,11 @@ date_end: "2026-03-17T17:00:00Z"
 all_day: false
 
 tags: [DYC, EUSDR, Policy, Sofia, European Union, Youth Advocacy]
+
+authors:
+- name: "me"
+
+organization: "EU Strategy for the Danube Region (EUSDR)"
 
 links:
 - icon: file-pdf
