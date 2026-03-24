@@ -18,6 +18,15 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+
+  - block: markdown
+    content:
+      title: '💻 GitHub Ecosystem'
+      subtitle: 'Personal & Research Organization'
+      text: '{{< github_stats >}}'
+    design:
+      columns: '1'
+
   - block: resume-skills
     content:
       title: Skills & Hobbies
@@ -30,4 +39,5 @@ sections:
     content:
       title: Languages
       username: me
+
 ---

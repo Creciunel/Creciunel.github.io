@@ -49,6 +49,7 @@ sections:
         For collaborations, please contact me at <a href="mailto:creciunelcatalin@gmail.com">creciunelcatalin@gmail.com</a>.
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
