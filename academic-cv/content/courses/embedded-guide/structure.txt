@@ -1,0 +1,36 @@
+content/
+└── courses/
+    └── embedded-engineering/        # Numele cursului tău
+        ├── _index.md                # Pagina principală a cursului (Landing page)
+        │
+        ├── 01-power-safety/         # Capitolul 1
+        │   ├── _index.md            # Introducere în Power & Safety
+        │   └── awg-table.md         # Lecție: Tabel AWG + Current Rating Widget
+        │
+        ├── 02-circuit-fundamentals/ # Capitolul 2
+        │   ├── _index.md            # Bazele circuitelor
+        │   └── ohms-law.md          # Lecție: Legea lui Ohm + Putere Widget
+        │
+        ├── 03-signal-conditioning/  # Capitolul 3
+        │   ├── _index.md            # Adaptarea semnalelor
+        │   └── voltage-divider.md   # Lecție: Divizor de Tensiune Widget
+        │
+        ├── 04-component-id/         # Capitolul 4
+        │   ├── _index.md            # Identificarea componentelor
+        │   └── resistor-bands.md    # Lecție: Codul culorilor la rezistențe Widget
+        │
+        ├── 05-input-stability/      # Capitolul 5
+        │   ├── _index.md            # Stabilitate digitală
+        │   └── pull-up-down.md      # Lecție: Simulator Pull-up / Pull-down
+        │
+        ├── 06-communication/        # Capitolul 6
+        │   ├── _index.md            # Protocoale de comunicare
+        │   └── protocol-selector.md # Lecție: I2C vs SPI vs UART Widget
+        │
+        ├── 07-monitoring/           # Capitolul 7
+        │   ├── _index.md            # Monitorizarea sistemului
+        │   └── serial-plotter.md    # Lecție: Live Serial Plotter Widget
+        │
+        └── 08-power-management/     # Capitolul 8
+            ├── _index.md            # Autonomie și eficiență
+            └── battery-life.md      # Lecție: Battery Life Estimator Widget

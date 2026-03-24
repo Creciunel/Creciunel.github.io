@@ -292,3 +292,7 @@ hugoblox:
 
   features:
     image_processing: true
+    mermaid:
+      enable: true
+    math:
+      enable: true

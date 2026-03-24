@@ -55,7 +55,9 @@ links:
 
 CROSSCOMP is a cross-border collaboration project between:
 
-* **Technical University of Moldova (TUM)** * **Gheorghe Asachi Technical University of Iași (TUIASI)** * **State Agrarian University of Moldova (UASM)**
+* **Technical University of Moldova (TUM)** 
+* **Gheorghe Asachi Technical University of Iași (TUIASI)** 
+* **State Agrarian University of Moldova (UASM)**
 
 The project aims to improve academic education and infrastructure in the **automotive engineering sector**, aligning regional curricula with modern industry requirements.
 

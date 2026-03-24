@@ -1,0 +1,114 @@
+<div class="p-5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 shadow-md font-mono text-[13px]">
+    <div class="flex items-center gap-2 mb-4 border-b border-slate-200 dark:border-slate-800 pb-2 text-blue-600 dark:text-blue-400 font-bold">
+        <span>[ENGINEERING_TOOL: WIRE_INTEGRITY]</span>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+        <div>
+            <label class="block text-[10px] text-slate-500 uppercase font-bold">System Type</label>
+            <select id="sys-type" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded p-1.5 dark:text-white">
+                <option value="dc">Low Voltage DC</option>
+                <option value="ac">Mains AC (RMS)</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-[10px] text-slate-500 uppercase font-bold">Voltage (V)</label>
+            <input type="number" id="v-in" value="5.0" step="0.1" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded p-1.5 focus:ring-1 focus:ring-blue-500 outline-none dark:text-white">
+        </div>
+        <div>
+            <label class="block text-[10px] text-slate-500 uppercase font-bold">Current (A)</label>
+            <input type="number" id="i-in" value="1.0" step="0.1" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded p-1.5 focus:ring-1 focus:ring-blue-500 outline-none dark:text-white">
+        </div>
+        <div>
+            <label class="block text-[10px] text-slate-500 uppercase font-bold">AWG Gauge</label>
+            <select id="awg-sel" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded p-1.5 dark:text-white">
+                <option value="20.9" data-limit="16">AWG 18</option>
+                <option value="33.3" data-limit="11">AWG 20</option>
+                <option value="52.9" data-limit="7">AWG 22</option>
+                <option value="84.2" data-limit="3.5">AWG 24</option>
+                <option value="133.9" data-limit="2.2">AWG 26</option>
+                <option value="212.9" data-limit="1.4" selected>AWG 28</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 p-3 bg-white/50 dark:bg-black/20 rounded border border-slate-200 dark:border-slate-800 mb-4">
+        <div class="text-slate-500 uppercase text-[10px]">Power Loss (1m): <span id="p-loss" class="block text-sm font-bold text-slate-800 dark:text-slate-200">0.00 W</span></div>
+        <div class="text-slate-500 uppercase text-[10px]">V_Drop (1m): <span id="v-drop" class="block text-sm font-bold text-slate-800 dark:text-slate-200">0.00 V</span></div>
+    </div>
+
+    <div id="status-msg" class="p-2 rounded text-center font-bold uppercase tracking-widest text-[11px]">
+        Calculating...
+    </div>
+</div>
+
+<script>
+(function() {
+    const sysType = document.getElementById('sys-type');
+    const vIn = document.getElementById('v-in');
+    const iIn = document.getElementById('i-in');
+    const awgSel = document.getElementById('awg-sel');
+    
+    function update() {
+        const type = sysType.value;
+        const i = parseFloat(iIn.value) || 0;
+        const v = parseFloat(vIn.value) || 1;
+        const selectedOpt = awgSel.options[awgSel.selectedIndex];
+        const resPerKm = parseFloat(awgSel.value);
+        const ampLimit = parseFloat(selectedOpt.getAttribute('data-limit'));
+        const resPerM = resPerKm / 1000;
+
+        const vDrop = i * resPerM;
+        const pLoss = i * i * resPerM; // Wați pe metru
+        const vDropPercent = (vDrop / v) * 100;
+
+        document.getElementById('v-drop').innerText = vDrop.toFixed(3) + " V";
+        document.getElementById('p-loss').innerText = pLoss.toFixed(3) + " W/m";
+
+        const msg = document.getElementById('status-msg');
+        // Resetăm stilul de bază (comun tuturor stărilor)
+        msg.style.padding = "8px";
+        msg.style.borderRadius = "4px";
+        msg.style.textAlign = "center";
+        msg.style.fontWeight = "bold";
+        msg.style.textTransform = "uppercase";
+
+        if (type === 'ac') {
+            if (i > ampLimit || pLoss > 4.0) {
+                msg.innerText = `⚠️ DANGER: FIRE HAZARD (${pLoss.toFixed(1)} W/m)`;
+                msg.style.backgroundColor = "#dc2626"; // Red-600
+                msg.style.color = "white";
+            } 
+            else if (i > (ampLimit * 0.8) || pLoss > 1.5) {
+                msg.innerText = "🟠 CAUTION: OVERHEATING RISK";
+                msg.style.backgroundColor = "#f97316"; // Orange-500
+                msg.style.color = "white";
+            } 
+            else if (vDropPercent > 3) {
+                msg.innerText = "🟡 WARNING: VOLTAGE DROP > 3%";
+                msg.style.backgroundColor = "#facc15"; // Yellow-400
+                msg.style.color = "black";
+            } 
+            else {
+                msg.innerText = "✅ AC_SYSTEM_SAFE";
+                msg.style.backgroundColor = "#dcfce7"; // Green-100
+                msg.style.color = "#15803d"; // Green-700
+            }
+        } else {
+            // Logica pentru DC folosind același sistem de msg.style.backgroundColor...
+            if (vDropPercent > 10 || pLoss > 3.0) {
+                msg.innerText = "❌ CRITICAL: SYSTEM UNSTABLE / HEAT";
+                msg.style.backgroundColor = "#fee2e2"; // Red-100
+                msg.style.color = "#b91c1c"; // Red-700
+            } else {
+                msg.innerText = "✅ DC_LOGIC_SAFE";
+                msg.style.backgroundColor = "#dcfce7";
+                msg.style.color = "#15803d";
+            }
+        }
+    }
+
+    [sysType, vIn, iIn, awgSel].forEach(e => e.addEventListener('input', update));
+    update();
+})();
+</script>

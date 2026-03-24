@@ -47,6 +47,8 @@ links:
     icon_pack: fas
     name: "Book of Abstracts"
     url: "https://icmpp.ro/macroyouth2025/files/ProgramandBookofAbstractMacroYouth2025.pdf"
+
+math: true
 ---
 
 > [!NOTE]

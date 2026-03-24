@@ -1,0 +1,9 @@
+Ordine,Capitol,Instrumentul Inclus (Widget),Logica: De ce urmează acesta?
+1,Power & Safety,Tabel AWG + Current Rating,"Primul pas: Înainte de orice circuit, trebuie să știi ce fire folosești să nu ia foc (mai ales la 30kV). Totul începe cu infrastructura fizică."
+2,Circuit Fundamentals,Legea lui Ohm + Puterea (P),"Calculul de bază: Acum că ai firele, trebuie să calculezi consumul și valorile de bază pentru a nu arde componentele."
+3,Signal Conditioning,Divizor de Tensiune (Calculator),"Adaptarea: Senzorii tăi scot tensiuni mari, dar microcontrolerul vrea 3.3V. Este pasul logic între ""Putere"" și ""Inteligență""."
+4,Component Identification,Calculator Rezistențe (Benzi),"Implementarea: Ai făcut calculele, acum trebuie să identifici fizic piesele în sertar pentru a le lipi pe PCB."
+5,Input Stability,Simulator Pull-up / Pull-down,"Digital Inputs: Ai lipit piesele, acum vrei să citești un buton/senzor digital fără ca zgomotul electric să dea erori."
+6,Communication Protocols,Selector I2C / SPI / UART,"Integrarea: Dispozitivul e gata, acum trebuie să ""vorbească"" cu alți senzori sau cu un ecran. Alegi protocolul corect."
+7,Signal Monitoring,Serial Plotter (Live Canvas),Validarea: Totul e conectat. Acum vizualizezi datele în timp real să vezi dacă semnalul este curat sau are zgomot.
+8,Power Management,Battery Life Estimator,"Finalitatea: Produsul funcționează. Ultimul pas este să vezi cât timp rezistă ""în teren"" fără a fi conectat la priză."
