@@ -38,6 +38,8 @@ links:
     icon_pack: fas
     name: Full Paper
     url: https://ibn.idsi.md/sites/default/files/imag_file/210-214_36.pdf
+
+math: true
 ---
 
 ### Key Research Findings

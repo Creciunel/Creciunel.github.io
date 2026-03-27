@@ -26,7 +26,7 @@ links:
 
 Real-time temperature controller designed for industrial/laboratory applications. The system leverages the dual-core architecture of the **ESP32** to separate the PID regulation logic from the communication stack.
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 The project focuses on high-precision thermal regulation with the following stack:
 
@@ -34,10 +34,8 @@ The project focuses on high-precision thermal regulation with the following stac
 * **PID Algorithm:** Custom-tuned feedback loop for stabilization.
 * **Web Interface:** Live monitoring via `ESPAsyncWebServer` with WebSocket support for real-time graphs.
 
-## 📷 Gallery
+## System Interface and Data Visualization
 
-{{< figure src="https://raw.githubusercontent.com/NCMST/Temperature_Control/refs/heads/main/Images/Setting_page.png" title="Web Interface" caption="Live data visualization and PID tuning page" >}}
-
-{{< figure src="https://raw.githubusercontent.com/NCMST/Temperature_Control/refs/heads/main/Images/CSV%20page.png" title="CSV Export" caption="Export temperature data to CSV format" >}}
+{{< gallery-pro images="featured.jpg, main windows.png, Setting_page.png, CSV page.png" >}}
 
 ---

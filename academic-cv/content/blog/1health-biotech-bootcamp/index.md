@@ -40,7 +40,7 @@ Organized by **BioMentorHub**, the bootcamp combined **two weeks of online train
 
 ---
 
-### 🚀 From Research to Real-World Impact
+### From Research to Real-World Impact
 
 Throughout the online phase, participants explored key aspects of startup development — from intellectual property and market validation to business modeling and governance.
 
@@ -50,7 +50,7 @@ Interactive modules encouraged us to design business models around real scientif
 
 ---
 
-### 🎯 Mentorship and Collaboration
+### Mentorship and Collaboration
 
 A major highlight of the bootcamp was its mentorship program. I had the opportunity to engage with and receive guidance from an exceptional group of mentors:
 
@@ -60,25 +60,15 @@ Their diverse experience provided valuable feedback and perspective, especially 
 
 ---
 
-### 🎤 On-site Week in Timișoara
+### On-site Week in Timișoara
 
 The final **in-person week in Timișoara** brought all these learnings together through hands-on workshops, networking sessions, and live pitch events. Speakers from both academia and industry — including **Marco Kogler**, **Nicolai Strøm-Olsen**, **Tudor Stanciu**, **Martine Abboud**, **Andrea Balukova**, and **Emma Salgård Cunha** from the **University of Cambridge** — shared insights into global biotech ecosystems, communication, and leadership.
 
 ---
 
-### 📸 Highlights
+### Highlights
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-  <div style="flex: 1; min-width: 300px;">
-    {{< figure src="Diploms1.jpg" title="Certificate Ceremony" >}}
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    {{< figure src="Diploms2.jpg" title="Closing Session" >}}
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    {{< figure src="Socialization.jpg" title="Networking" >}}
-  </div>
-</div>
+{{< gallery-pro title="Bootcamp Highlights" images="Diploms1.jpg, Diploms2.jpg, Socialization.jpg" >}}
 
 ---
 📌 *This program reinforced the importance of collaboration and multidisciplinary thinking in transforming research outcomes into scalable, high-impact ventures.*

@@ -85,13 +85,7 @@ Developed with **Gheorghe Creciunel** and coordinated by **Dr. Eduard Monaico**,
 
 ### 📷 Gallery
 
-{{< figure src="16-10.jpg" title="Presentation Day" caption="Demonstrating the DevHealth prototype to the jury at Tekwill" >}}
-
-<div style="display: flex; flex-wrap: wrap; gap: 15px;">
-  <div style="flex: 1; min-width: 300px;">
-    {{< figure src="34-4.jpg" title="Award Ceremony" caption="Receiving the 2nd Place award" >}}
-  </div>
-</div>
+{{< gallery-pro title="Award Ceremony" images="16-10.jpg, 34-4.jpg, Realview.jpg, webwiew.jpg" >}}
 
 ---
 📌 *This double success highlights the potential of embedded systems in both medical and industrial research applications.*

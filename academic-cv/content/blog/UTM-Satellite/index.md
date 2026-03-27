@@ -53,6 +53,7 @@ On **June 16, 2025**, the *Technical University of Moldova (UTM)* was featured i
 ## Project Purpose
 
 The goal is to demonstrate the use of:
+
 * **Two radiation sensors:** Integration of both analog and digital sensing paths.
 * **FPGA logic:** A dedicated circuit for real-time **SEU (Single Event Upset)** detection.
 * **Edge AI:** A neural network deployed on-chip for radiation classification and filtering.
@@ -61,6 +62,10 @@ The goal is to demonstrate the use of:
 
 
 ## Project Context
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  {{< figure src="Satellite_System_Overview.png" title="Satellite System Overview" >}}
+</div>
 
 This mission is part of **J-CUBE**, coordinated by **LaSEINE (Japan)** and hosted at Kyutech, with the following objectives:
 
@@ -84,12 +89,15 @@ The reference radiation module utilizes a dual-channel detection strategy, as de
 ## Media Mentions
 
 <div class="video-container">
+
   <iframe width="100%" height="450" src="https://tvrmoldova.md/embed.html?file=https://tvrm-s3.fra1.cdn.digitaloceanspaces.com/superdesk/20250615160632/70e8f19d8080b580cb4d0fd8a09cc5733b7c75ad84baf85579b0b18d7d6ee87a.mp4&poster=https://tvrm-s3.fra1.cdn.digitaloceanspaces.com/superdesk/20250615170616/207c5f7cffa08a20e9ced3879ca591727bd5d39252b947176fd83328b40b4462.png&title=Sursa%3A%20TVR%20Moldova" frameborder="0" allowfullscreen></iframe>
+
 </div>
 
 ## Impact and Innovation
 
 This project explores:
+
 * **On-device AI inference:** Using FPGA for low-latency radiation detection and classification.
 * **Extreme conditions:** Testing **nanosensors** for orbital radiation and high-vacuum stability.
 * **Scalability:** Future applications in **ISS, nanosatellites, and environmental sensing**.
@@ -100,14 +108,7 @@ The innovation lies in bringing intelligence to the **edge**: one level of AI is
 
 ## Technical Update: June 16, 2025
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-  <div style="flex: 1; min-width: 250px;">
-    {{< figure src="Front-side.jpg" title="Front Side" caption="Module front-side PCB layout" >}}
-  </div>
-  <div style="flex: 1; min-width: 250px;">
-    {{< figure src="back-side.jpg" title="Back Side" caption="Module back-side PCB layout" >}}
-  </div>
-</div>
+{{< gallery-pro title="Module Prototype" images="back-side.jpg, Front-side.jpg" >}}
 
 ---
 📌 *This project is realized in collaboration with UTM and LaSEINE Japan, under the BIRDS-RPM satellite program.*

@@ -29,6 +29,8 @@ links:
     icon_pack: fas
     name: Full Paper
     url: https://cris.utm.md/bitstream/5014/1295/1/p-217-219.pdf
+
+math: true
 ---
 
 ### Research Methodology

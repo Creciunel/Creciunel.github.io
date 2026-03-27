@@ -1,0 +1,39 @@
+<div class="gallery-pro-wrapper my-12">
+    <div class="flex items-center justify-between mb-4 px-1 border-b border-slate-200 dark:border-slate-800 pb-2">
+        <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+             {{ .Get "title" | default "Technical Documentation Assets" }}
+        </span>
+        </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="gallery-{{ .Ordinal }}">
+        {{ $images := .Get "images" | default "" }}
+        {{ if $images }}
+            {{ range (split $images ",") }}
+                {{ $img := trim . " " }}
+                <a data-fancybox="gallery-{{ $.Ordinal }}" href="{{ $img }}" class="group relative block overflow-hidden rounded-md border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
+                    <img src="{{ $img }}" alt="Technical Visual" class="w-full h-auto block transition-all duration-300 group-hover:brightness-110">
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    if (typeof Fancybox !== 'undefined') {
+        Fancybox.bind("[data-fancybox^='gallery-']", {
+            dragToClose: false,
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: ["zoomIn", "zoomOut", "toggle1to1"],
+                    right: ["slideshow", "fullscreen", "close"]
+                }
+            },
+            Images: {
+                Panzoom: { maxScale: 3 }
+            }
+        });
+    }
+</script>

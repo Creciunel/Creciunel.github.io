@@ -40,14 +40,25 @@ projects:
 
 From **July 4 to July 12, 2025**, I had the great opportunity to participate in the **12th International Congress of the Balkan Physical Union (BPU12)** in Bucharest.
 
-## 🧠 Quantum School: July 4–8
+## Quantum School: July 4–8
+
 I participated in the school *"Frontiers in Quantum Science and Technology"*, with lectures from **KIT Karlsruhe**, **Max Planck**, and **IBM Research Zurich**. Topics covered everything from quantum materials to machine learning for quantum applications.
 
-## 🔬 ELI-NP Visit
-A unique highlight was our visit to the **Extreme Light Infrastructure – Nuclear Physics (ELI-NP)** in Măgurele, home to the most powerful lasers in the world.
+## ELI-NP Visit (Extreme Light Infrastructure)
 
-## 🧾 Poster Presentation: July 10–12
-I presented my work titled: **"A Smart Radiation Sensor Module with AI Capabilities for CubeSat Missions"**.
+A core highlight of the congress was the technical visit to the Extreme Light Infrastructure – Nuclear Physics (ELI-NP) in Măgurele. As one of the most advanced research facility in the world, it hosts two 10-Petawatt ($10^{16}$ Watts) high-power laser systems.
+
+Key Infrastructure Highlights:
+
+- HPLS (High Power Laser System): Developed by Thales, these lasers can reach intensities where vacuum breakdown and non-linear QED effects can be studied.
+- Gamma Beam System: A high-intensity, monochromatic gamma-ray source produced by Compton backscattering, enabling new frontiers in nuclear photonics.
+- Radiation Hardening Context: For my research in radiation sensors, ELI-NP represents the ultimate testing ground for understanding how high-energy photon interaction affects semiconductor materials and CMOS sensor integrity.
+ 
+ The facility is not just a triumph of physics, but of Embedded Control Systems. Managing the pulse synchronization and the vacuum targets requires real-time systems far beyond standard industrial PLC limits, aligning perfectly with the Industry 4.0 principles discussed in my other projects.S
+
+## Poster Presentation: July 10–12
+
+I presented my work titled: **"Fabrication and Characterization of a novel Iron oxide aeromaterial"**.
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   {{< figure src="poster_v2.jpg" title="Presented the Research" >}}
@@ -55,11 +66,7 @@ I presented my work titled: **"A Smart Radiation Sensor Module with AI Capabilit
 
 ### Gallery from the Event
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  {{< figure src="presentation_bpu_2.jpg" title="Presenting the Research" >}}
-  {{< figure src="moldova_fizic_team.jpg" title="With the Moldova Physics Team" >}}
-  {{< figure src="conference_team.jpg" title="BPU12 Group Photo" >}}
-</div>
+{{< gallery-pro title="BPU12 CONGRESS VISUALS" images="Presentation_BPU_2.jpg, Moldova_Fizic_Team.jpg, Conference_team.jpg" >}}
 
 ---
-*This experience showcased the vibrant future of physics and reinforced my focus on intelligent radiation monitoring for space environments.*
+*This experience showcased the vibrant future of physics and reinforced my focus on novel aeromaterials.*

@@ -64,18 +64,9 @@ The project stands out by applying modern software engineering principles to har
 
 ### Conference Highlights
 
-#### ECCO 2024 Presentation
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="022-2.jpg" width="100%" alt="Presentation at ECCO 2024" />
-  <img src="01-1.jpg" width="48%" alt="Audience engagement" />
-  <img src="09.jpg" width="48%" alt="With the Organizing Committee" />
-</div>
+{{< gallery-pro title="ECCO 2024 Presentation" images="022-2.jpg, 01-1.jpg, 09.jpg" >}}
 
-#### Legacy: ECCO 2021
-<div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="ECOO_0603.jpg" width="48%" alt="Cătălin Creciunel - ECCO 2021" />
-  <img src="ECOO_0674.jpg" width="48%" alt="Conference Hall" />
-</div>
+{{< gallery-pro title="ECCO 2021" images="ECOO_0603.jpg, ECOO_0674.jpg" >}}
 
 ### Impact and Applications
 

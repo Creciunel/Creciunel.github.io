@@ -29,28 +29,35 @@ image:
   filename: featured.jpg
   focal_point: Smart
   preview_only: false
+
+math: true
 ---
 
 As a researcher in the **Young Researchers Project (#25.80012.5007.38TC)**, I am focused on the experimental development and structural investigation of tin-based 2D chalcogenides for environmental applications.
 
-## 🔬 Research Focus & Methodology
+## Research Focus & Methodology
 
 My work bridges the gap between mechanical engineering and materials science, focusing on the liquid-phase exfoliation of layered materials.
 
-### 🛠️ Ultrasound Sonication System
+### Ultrasound Sonication System
+
 A major part of my contribution involves:
+
 * **System Design:** Building and operating a custom ultrasound sonication setup.
 * **Optimization:** Fine-tuning sonochemical parameters (amplitude, pulse, time) to maximize exfoliation efficiency.
 * **Processing:** Controlling the transition from bulk layered crystals to few-layer 2D nanosheets.
 
-### 🧪 Investigated Materials
+### Investigated Materials
+
 I am currently studying the preparation methods and structural evolution of:
+
 * **SnS (Tin Monosulfide):** Exploration of narrow bandgap properties.
 * **SnS₂ (Tin Disulfide):** Evaluation of photocatalytic performance under visible light.
 
-## 📈 Ongoing Objectives
+## Ongoing Objectives
 
 The project is currently in the investigation phase, with efforts dedicated to:
+
 1. **Improving Exfoliation Yield:** Reducing nanosheet thickness while maintaining lateral size.
 2. **Structural Characterization:** Analyzing the nanomaterials using XRD and Raman spectroscopy.
 3. **Photocatalytic Testing:** Evaluating the degradation efficiency of organic pollutants under irradiation.
