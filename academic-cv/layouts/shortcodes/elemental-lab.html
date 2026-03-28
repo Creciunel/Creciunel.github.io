@@ -1,14 +1,5 @@
-class Atom {
-  constructor(symbol, mass, color) {
-    this.symbol = symbol;
-    this.mass = mass;
-    this.color = color;
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.velocity = { x: (Math.random()-0.5) * 2, y: -Math.random() * 2 }; // Gazele tind să urce
-  }
-
-  draw() {
-    // Desenează cercul și simbolul în centru
-  }
-}
+<div class="mt-4 flex items-center gap-4 border-t border-slate-100 dark:border-slate-800 pt-3">
+    <label class="text-[10px] font-mono uppercase text-slate-500">System Temperature (K):</label>
+    <input type="range" id="temp-slider" min="0" max="10" step="0.5" value="1" class="flex-grow accent-red-500">
+    <span id="temp-value" class="text-xs font-mono font-bold w-8 text-red-500">1x</span>
+</div>
