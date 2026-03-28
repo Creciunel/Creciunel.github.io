@@ -1,0 +1,14 @@
+class Atom {
+  constructor(symbol, mass, color) {
+    this.symbol = symbol;
+    this.mass = mass;
+    this.color = color;
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.velocity = { x: (Math.random()-0.5) * 2, y: -Math.random() * 2 }; // Gazele tind să urce
+  }
+
+  draw() {
+    // Desenează cercul și simbolul în centru
+  }
+}

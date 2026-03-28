@@ -48,7 +48,7 @@ The **EU Strategy for the Danube Region (EUSDR)** is a macro-regional strategy i
 
 The **DYC (Danube Youth Council)** acts as the official youth advisory body to these structures.
 
-![The whole team and Bulgarian presidency](The_hole_team_and_Bulgarian_presidebcy.jpg)
+![The whole team and Bulgarian presidency](team-sofia.jpg)
 
 ### The Role of a Spokesperson
 As the **Spokesperson** for the DYC, my responsibility extends beyond communication. I am tasked with ensuring the council's internal structure is robust and that our collective voice is translated into actionable policy recommendations. You can find the full [list of DYC members and representatives here](https://danube-region.eu/danube-youth-council/).
