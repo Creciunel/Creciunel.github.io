@@ -49,15 +49,21 @@ Use the controls below to inject atoms into the chamber. You can drag them, heat
 <div id="atomic-lab-container" class="my-8 p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 shadow-inner">
     
     <div id="lab-controls" class="flex flex-wrap gap-2 mb-4 border-b border-slate-100 dark:border-slate-800 pb-3">
-        <button onclick="addAtom('H')" class="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-200 rounded-md text-sm font-mono hover:bg-sky-200">Inject H (Light Gas)</button>
-        <button onclick="addAtom('O')" class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-200 rounded-md text-sm font-mono hover:bg-red-200">Inject O (Reactive)</button>
-        <button onclick="addAtom('Zn')" class="px-3 py-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-md text-sm font-mono hover:bg-slate-300">Inject Zn (Heavy)</button>
+        <button onclick="addAtom('H')" class="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-200 rounded-md text-sm font-mono hover:bg-sky-200">Inject H</button>
+        <button onclick="addAtom('O')" class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-200 rounded-md text-sm font-mono hover:bg-red-200">Inject O</button>
+        <button onclick="addAtom('Zn')" class="px-3 py-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-md text-sm font-mono hover:bg-slate-300">Inject Zn</button>
         <div class="flex-grow"></div>
-        <button onclick="clearChamber()" class="px-3 py-1 bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-200 rounded-md text-sm font-mono border border-amber-300 dark:border-amber-800">Clear</button>
+        <button onclick="clearChamber()" class="px-3 py-1 bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-200 rounded-md text-sm font-mono">Clear</button>
     </div>
 
     <canvas id="atomic-canvas" width="800" height="500" class="w-full h-auto bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-100 dark:border-slate-800"></canvas>
     
+    <div class="mt-4 flex items-center gap-4 border-t border-slate-100 dark:border-slate-800 pt-3">
+        <label class="text-[10px] font-mono uppercase text-slate-500">System Temperature:</label>
+        <input type="range" id="temp-slider" min="0.1" max="5" step="0.1" value="1" class="flex-grow">
+        <span id="temp-value" class="text-xs font-mono font-bold w-8 text-red-500">1x</span>
+    </div>
+
     <div class="mt-3 text-[11px] font-mono text-slate-400 dark:text-slate-500 text-right">
         ATOM_COUNT: <span id="atom-count">0</span> | STATE: ACTIVE
     </div>
