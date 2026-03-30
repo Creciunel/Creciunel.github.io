@@ -1,5 +1,8 @@
 ---
 title: 'Projects'
+
+summary: "A curated selection of my projects, showcasing a range of technical skills and applications across various domains."
+
 date: 2024-05-19
 type: landing
 
