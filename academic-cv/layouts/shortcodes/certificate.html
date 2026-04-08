@@ -1,0 +1,97 @@
+<style>
+  .certificate-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 232, 240, 0.1);
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none !important;
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: #38bdf8;
+    background: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+  }
+
+  /* Efectul de lumină care trece peste card la hover */
+  .certificate-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    transition: 0.5s;
+  }
+
+  .certificate-card:hover::after {
+    left: 100%;
+  }
+
+  .cert-logo img {
+    transition: transform 0.3s ease;
+  }
+
+  .certificate-card:hover .cert-logo img {
+    transform: rotate(-5deg) scale(1.1);
+  }
+
+  .view-btn {
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8 !important;
+  }
+
+  .certificate-card:hover .view-btn {
+    background: #38bdf8;
+    color: #0f172a !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+  }
+</style>
+
+<a href="{{ .Get "link" }}" target="_blank" class="certificate-card">
+  <div class="cert-logo">
+    <img src="{{ .Get "logo" }}" alt="Logo" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px; background: #fff; padding: 5px;">
+  </div>
+  
+  <div class="cert-info" style="flex-grow: 1;">
+    <h3 style="margin: 0; font-size: 1.15rem; font-weight: 600; color: #f8fafc; letter-spacing: -0.025em;">
+      {{ .Get "title" }}
+    </h3>
+    <p style="margin: 3px 0; font-size: 0.95rem; color: #38bdf8; font-weight: 500;">
+      {{ .Get "org" }}
+    </p>
+    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+        <span style="font-size: 0.75rem; color: #64748b; font-family: monospace; background: rgba(100, 116, 139, 0.1); padding: 2px 6px; border-radius: 4px;">
+            Issued {{ .Get "date" }}
+        </span>
+        {{ if .Get "id" | and (ne (.Get "id") "#") }}
+        <span style="font-size: 0.75rem; color: #94a3b8; font-family: monospace;">
+            ID: {{ .Get "id" }}
+        </span>
+        {{ end }}
+    </div>
+  </div>
+
+  <div class="cert-action">
+    <div class="view-btn" style="padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">
+      Verify ↗
+    </div>
+  </div>
+</a>
