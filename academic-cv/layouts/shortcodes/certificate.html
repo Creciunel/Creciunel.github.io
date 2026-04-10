@@ -1,97 +1,152 @@
 <style>
+  .certificate-wrapper {
+    text-decoration: none !important;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
   .certificate-card {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
-    padding: 18px;
-    margin-bottom: 20px;
+    gap: 1.5rem;
+    padding: 1.25rem;
     border-radius: 12px;
-    border: 1px solid rgba(226, 232, 240, 0.1);
-    background: rgba(15, 23, 42, 0.4);
-    backdrop-filter: blur(8px);
+    /* Folosim variabilele temei pentru culori */
+    border: 1px solid var(--border-color, rgba(128, 128, 128, 0.2));
+    background-color: var(--card-background, rgba(255, 255, 255, 0.03));
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    text-decoration: none !important;
+  }
+
+  /* Ajustări pentru mobil */
+  @media (max-width: 640px) {
+    .certificate-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .cert-action {
+      width: 100%;
+    }
+    
+    .view-btn {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .certificate-card:hover {
-    transform: translateY(-5px) scale(1.01);
+    transform: translateY(-4px);
     border-color: #38bdf8;
-    background: rgba(30, 41, 59, 0.7);
-    box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.3);
+    background-color: var(--card-background-hover, rgba(255, 255, 255, 0.07));
   }
 
-  /* Efectul de lumină care trece peste card la hover */
-  .certificate-card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.05),
-      transparent
-    );
-    transition: 0.5s;
-  }
-
-  .certificate-card:hover::after {
-    left: 100%;
+  .cert-logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; /* Fundal alb pentru logouri care au nevoie de contrast */
+    padding: 6px;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
   }
 
   .cert-logo img {
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
-  .certificate-card:hover .cert-logo img {
-    transform: rotate(-5deg) scale(1.1);
+  .cert-info {
+    flex-grow: 1;
+    min-width: 0; /* Previne ieșirea textului din container */
+  }
+
+  .cert-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    /* Respectă culoarea textului din temă */
+    color: var(--primary-text-color, #fff);
+  }
+
+  .cert-org {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+    color: #38bdf8;
+    font-weight: 600;
+  }
+
+  .cert-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .badge-date {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    font-family: monospace;
+  }
+
+  .cert-id {
+    font-size: 0.75rem;
+    color: var(--secondary-text-color, #94a3b8);
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .view-btn {
-    transition: all 0.2s ease;
-    background: transparent;
-    border: 1px solid #38bdf8;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1.5px solid #38bdf8;
     color: #38bdf8 !important;
+    transition: all 0.2s ease;
+    white-space: nowrap;
   }
 
   .certificate-card:hover .view-btn {
-    background: #38bdf8;
-    color: #0f172a !important;
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    background-color: #38bdf8;
+    color: #fff !important;
   }
 </style>
 
-<a href="{{ .Get "link" }}" target="_blank" class="certificate-card">
-  <div class="cert-logo">
-    <img src="{{ .Get "logo" }}" alt="Logo" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px; background: #fff; padding: 5px;">
-  </div>
-  
-  <div class="cert-info" style="flex-grow: 1;">
-    <h3 style="margin: 0; font-size: 1.15rem; font-weight: 600; color: #f8fafc; letter-spacing: -0.025em;">
-      {{ .Get "title" }}
-    </h3>
-    <p style="margin: 3px 0; font-size: 0.95rem; color: #38bdf8; font-weight: 500;">
-      {{ .Get "org" }}
-    </p>
-    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
-        <span style="font-size: 0.75rem; color: #64748b; font-family: monospace; background: rgba(100, 116, 139, 0.1); padding: 2px 6px; border-radius: 4px;">
-            Issued {{ .Get "date" }}
-        </span>
-        {{ if .Get "id" | and (ne (.Get "id") "#") }}
-        <span style="font-size: 0.75rem; color: #94a3b8; font-family: monospace;">
-            ID: {{ .Get "id" }}
-        </span>
-        {{ end }}
+<a href="{{ .Get "link" }}" target="_blank" class="certificate-wrapper">
+  <div class="certificate-card">
+    <div class="cert-logo">
+      <img src="{{ .Get "logo" }}" alt="Organization Logo">
     </div>
-  </div>
+    
+    <div class="cert-info">
+      <h3 class="cert-title">{{ .Get "title" }}</h3>
+      <p class="cert-org">{{ .Get "org" }}</p>
+      
+      <div class="cert-meta">
+        <span class="badge-date">Issued {{ .Get "date" }}</span>
+        {{ if .Get "id" | and (ne (.Get "id") "#") }}
+        <span class="cert-id">ID: {{ .Get "id" }}</span>
+        {{ end }}
+      </div>
+    </div>
 
-  <div class="cert-action">
-    <div class="view-btn" style="padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">
-      Verify ↗
+    <div class="cert-action">
+      <div class="view-btn">Verify ↗</div>
     </div>
   </div>
 </a>
