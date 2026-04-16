@@ -4,7 +4,7 @@ date: 2026-04-16
 tags: ["Automation", "Industry 4.0", "Robotics", "AI", "Embedded Systems"]
 categories: ["Events", "Tech Insights"]
 adress:
-    link: https://www.stein-automation.de/en/
+    link: https://www.stein-automation.de/
     city: Niedereschach
 image:
   caption: "STEIN Automation TechDay 2026"
@@ -16,7 +16,7 @@ The event was a perfect blend of "Practice over Theory," showcasing how modular 
 
 ## STEIN Automation: Setting the Standard in Transfer Systems
 
-The heart of the event was [STEIN Automation](https://www.stein-automation.de/en/). Their lineup demonstrated a clear shift toward maintenance-free and purely electric solutions:
+The heart of the event was [STEIN Automation](https://www.stein-automation.de/). Their lineup demonstrated a clear shift toward maintenance-free and purely electric solutions:
 
 * **STEIN 300 / 300e:** Modular, compact, and maintenance-free. The **300e** stands out with its **Softmove technology**, using all-electric drives to handle delicate components.
 * **STEIN 400:** A powerhouse capable of handling workpieces up to **80 kg** with collision-free precision.
@@ -42,7 +42,7 @@ Specializing in stopping and positioning, [Wörner](https://www.woerner-gmbh.com
 [PROMESS](https://www.promessmontage.de/en/) focused on the **Digital Twin**. They demonstrated the virtualization of a servo spindle, showing how digital models can predict behavior and optimize assembly forces in real-time.
 
 ### Ferdinand-Steinbeis-Institut (FSTI)
-One of the most forward-looking sessions was by [FSTI](https://steinbeis-fsti.de/), discussing how **AI can assist in troubleshooting machine failures**. This isn't just theory—it's about reducing downtime through intelligent error detection.
+One of the most forward-looking sessions was by [FSTI](https://ferdinand-steinbeis-institut.de/), discussing how **AI can assist in troubleshooting machine failures**. This isn't just theory—it's about reducing downtime through intelligent error detection.
 
 ---
 
