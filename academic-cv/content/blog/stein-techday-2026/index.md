@@ -8,6 +8,12 @@ adress:
     city: Niedereschach
 image:
   caption: "STEIN Automation TechDay 2026"
+
+links:
+  - icon: pdf
+    icon_pack: fas
+    name: Agenda
+    url: https://www.stein-automation.de/wp-content/uploads/AgendaTECHDAY_15April26-4.pdf
 ---
 
 I recently had the pleasure of attending the **STEIN TechDay** in Niedereschach (April 15, 2026). As an engineer focused on embedded systems and automation, experiencing a 62-meter **STEIN link Shuttle** system in live operation was a masterclass in modern intralogistics.
