@@ -1,0 +1,224 @@
+<div id="atomic-lab-container" class="my-8 p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 shadow-inner">
+    <div id="lab-controls" class="flex flex-wrap gap-2 mb-4 border-b border-slate-100 dark:border-slate-800 pb-3">
+        <button onclick="addAtom('H')" class="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-200 rounded-md text-sm font-mono hover:bg-sky-200">Inject H</button>
+        <button onclick="addAtom('O')" class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-200 rounded-md text-sm font-mono hover:bg-red-200">Inject O</button>
+        <button onclick="addAtom('Zn')" class="px-3 py-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-md text-sm font-mono hover:bg-slate-300">Inject Zn</button>
+        <div class="flex-grow"></div>
+        <button onclick="clearChamber()" class="px-3 py-1 bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-200 rounded-md text-sm font-mono">Clear</button>
+    </div>
+
+    <canvas id="atomic-canvas" width="800" height="500" class="w-full h-auto bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-100 dark:border-slate-800"></canvas>
+    
+    <div class="mt-4 flex items-center gap-4 border-t border-slate-100 dark:border-slate-800 pt-3">
+        <label class="text-[10px] font-mono uppercase text-slate-500">Temp:</label>
+        <input type="range" id="temp-slider" min="0.1" max="5" step="0.1" value="1" class="flex-grow">
+        <span id="temp-value" class="text-xs font-mono font-bold w-8 text-red-500">1x</span>
+    </div>
+
+    <div class="mt-2 text-[10px] font-mono text-slate-400 text-right uppercase">
+        Particles: <span id="atom-count">0</span>
+    </div>
+</div>
+
+<script>
+(function() {
+    const canvas = document.getElementById('atomic-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const atomCountDisplay = document.getElementById('atom-count');
+    const tempSlider = document.getElementById('temp-slider');
+    const tempValue = document.getElementById('temp-value');
+
+    let atoms = [];
+    let tempMultiplier = 1;
+
+    const elementData = {
+        'H':  { mass: 1,  radius: 8,  color: '#7dd3fc', maxBonds: 1 },
+        'O':  { mass: 16, radius: 14, color: '#f87171', maxBonds: 2 },
+        'Zn': { mass: 65, radius: 22, color: '#94a3b8', maxBonds: 1 }
+    };
+
+    class Atom {
+        constructor(type, x, y) {
+            const data = elementData[type];
+            this.type = type;
+            this.mass = data.mass;
+            this.radius = data.radius;
+            this.baseColor = data.color;
+            this.color = data.color;
+            this.maxBonds = data.maxBonds;
+            this.x = x || Math.random() * (canvas.width - this.radius * 2) + this.radius;
+            this.y = y || Math.random() * (canvas.height - this.radius * 2) + this.radius;
+            const speedFactor = type === 'H' ? 2 : 0.8;
+            this.vx = (Math.random() - 0.5) * speedFactor;
+            this.vy = (Math.random() - 0.5) * speedFactor;
+            this.bonds = [];
+        }
+
+        // FIX: Am corectat numele metodei din uupdate în update
+        update() {
+            this.bonds.forEach(partner => {
+                const dx = partner.x - this.x;
+                const dy = partner.y - this.y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+                const targetDist = this.radius + partner.radius + 2;
+                
+                if (dist > targetDist) {
+                    const springForce = 0.05 + (tempMultiplier * 0.01); 
+                    this.vx += (dx / dist) * springForce;
+                    this.vy += (dy / dist) * springForce;
+                }
+            });
+
+            if (tempMultiplier > 2.5) {
+                this.vx += (Math.random() - 0.5) * 0.3;
+                this.vy += (Math.random() - 0.5) * 0.3;
+            }
+
+            this.x += this.vx * tempMultiplier;
+            this.y += this.vy * tempMultiplier;
+
+            if (this.x + this.radius > canvas.width || this.x - this.radius < 0) this.vx *= -1;
+            if (this.y + this.radius > canvas.height || this.y - this.radius < 0) this.vy *= -1;
+            
+            // Frecare variabilă: mai mică la temperaturi mari pentru fluiditate
+            const damping = Math.min(0.99, 0.96 + (tempMultiplier * 0.01));
+            this.vx *= damping;
+            this.vy *= damping;
+        }
+
+        draw() {
+            this.bonds.forEach(partner => {
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(partner.x, partner.y);
+                ctx.strokeStyle = "rgba(255,255,255,0.4)";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+            
+            ctx.fillStyle = '#ffffff';
+            ctx.font = `bold ${this.radius * 0.7}px monospace`;
+            ctx.textAlign = 'center';
+            ctx.fillText(this.type, this.x, this.y + this.radius/3);
+        }
+    }
+
+    function handleCollisions() {
+        const rawVal = parseFloat(tempSlider.value);
+        const currentCelsius = Math.round((rawVal - 0.1) * (2273 / 4.9) - 273);
+
+        for (let i = 0; i < atoms.length; i++) {
+            for (let j = i + 1; j < atoms.length; j++) {
+                const a1 = atoms[i], a2 = atoms[j];
+                const dx = a2.x - a1.x;
+                const dy = a2.y - a1.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                const minDistance = a1.radius + a2.radius;
+                const isBonded = a1.bonds.includes(a2);
+
+                // --- LOGICA DE DISOCIERE DIFERENȚIATĂ ---
+                if (isBonded) {
+                    let shouldBreak = false;
+                    
+                    // Apa (H2O) se rupe mult mai repede în simularea noastră (ex: peste 300°C)
+                    if ((a1.type === 'H' || a2.type === 'H') && currentCelsius > 300) {
+                        shouldBreak = true;
+                    }
+                    
+                    // ZnO se rupe doar la temperaturi extreme
+                    if ((a1.type === 'Zn' || a2.type === 'Zn') && currentCelsius > 1800) {
+                        shouldBreak = true;
+                    }
+
+                    if (shouldBreak) {
+                        a1.bonds = a1.bonds.filter(b => b !== a2);
+                        a2.bonds = a2.bonds.filter(b => b !== a1);
+                        a1.color = a1.baseColor;
+                        a2.color = a2.baseColor;
+                        // Impuls de respingere (explozie termică)
+                        const force = currentCelsius / 500; 
+                        a1.vx -= (dx / distance) * force;
+                        a1.vy -= (dy / distance) * force;
+                        continue;
+                    }
+                }
+
+                // --- LOGICA DE FORMARE ---
+                if (!isBonded) {
+                    // Apa se formează DOAR la temperaturi mici
+                    if (currentCelsius < 100 && distance < minDistance + 12) {
+                        if ((a1.type === 'O' && a2.type === 'H' && a1.bonds.length < 2 && a2.bonds.length < 1) ||
+                            (a1.type === 'H' && a2.type === 'O' && a1.bonds.length < 1 && a2.bonds.length < 2)) {
+                            a1.bonds.push(a2);
+                            a2.bonds.push(a1);
+                            a1.color = "#38bdf8"; a2.color = "#38bdf8";
+                        }
+                    }
+                    // ZnO se formează DOAR în fereastra de oxidare (400°C - 1800°C)
+                    if (currentCelsius > 400 && currentCelsius < 1800 && distance < minDistance + 12) {
+                        if ((a1.type === 'Zn' && a2.type === 'O' && a1.bonds.length < 1 && a2.bonds.length < 2) ||
+                            (a1.type === 'O' && a2.type === 'Zn' && a1.bonds.length < 2 && a2.bonds.length < 1)) {
+                            a1.bonds.push(a2);
+                            a2.bonds.push(a1);
+                            a1.color = "#e2e8f0"; a2.color = "#e2e8f0";
+                        }
+                    }
+                }
+
+                if (distance < minDistance && !isBonded) {
+                    const overlap = minDistance - distance;
+                    const nx = dx / distance;
+                    const ny = dy / distance;
+                    a1.x -= nx * (overlap / 2); a1.y -= ny * (overlap / 2);
+                    a2.x += nx * (overlap / 2); a2.y += ny * (overlap / 2);
+                    const v1n = a1.vx * nx + a1.vy * ny;
+                    const v2n = a2.vx * nx + a2.vy * ny;
+                    const m1 = a1.mass, m2 = a2.mass;
+                    const newV1n = (v1n * (m1 - m2) + 2 * m2 * v2n) / (m1 + m2);
+                    const newV2n = (v2n * (m2 - m1) + 2 * m1 * v1n) / (m1 + m2);
+                    a1.vx += (newV1n - v1n) * nx; a1.vy += (newV1n - v1n) * ny;
+                    a2.vx += (newV2n - v2n) * nx; a2.vy += (newV2n - v2n) * ny;
+                }
+            }
+        }
+    }
+
+    window.addAtom = function(type) {
+        atoms.push(new Atom(type));
+        if(atomCountDisplay) atomCountDisplay.innerText = atoms.length;
+    };
+
+    window.clearChamber = function() {
+        atoms = [];
+        if(atomCountDisplay) atomCountDisplay.innerText = 0;
+    };
+
+    function updateTempDisplay(val) {
+        const celsius = Math.round((val - 0.1) * (2273 / 4.9) - 273);
+        tempValue.innerText = celsius + "°C";
+    }
+
+    tempSlider.addEventListener('input', (e) => {
+        const val = parseFloat(e.target.value);
+        // Puterea 1.6 oferă o senzație de viteză mult mai bună la 600-1000 grade
+        tempMultiplier = Math.pow(val, 1.6); 
+        updateTempDisplay(val);
+    });
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        handleCollisions();
+        atoms.forEach(atom => { atom.update(); atom.draw(); });
+        requestAnimationFrame(animate);
+    }
+    
+    updateTempDisplay(1);
+    animate();
+})();
+</script>

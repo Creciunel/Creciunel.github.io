@@ -13,9 +13,25 @@ This represint a overview of my academic and professional background, including 
 - Netlify: A cloud-based platform used for deploying and hosting the website.
 - Academic CV Theme: A Hugo theme designed for creating academic CVs and personal websites, used as the basis for the website's design and structure.
 
+### New API
+
+- [render.com](https://render.com/docs) a cloud platform that provides hosting and deployment services for web applications, used for deploying the website and managing its backend services.
+
+![3D Structure](https://www.rdkit.org/docs/_images/picture_2.png)
+
+- [RDKit](https://www.rdkit.org/docs/GettingStartedInPython.html) - RDKit: An open-source cheminformatics software used for working with chemical data, used for processing and analyzing chemical information related to my research.
+
+![Dissociation of oxygen on Pt(100)](https://ase-lib.org/_images/o2pt100.png)
+
+- [ASE](https://ase-lib.org/gallery/gallery.html) - Atomic Simulation Environment: A Python library for setting up, manipulating, running, visualizing and analyzing atomistic simulations, used for simulating and analyzing atomic structures and interactions in my research.
+- FastAPI python framework for building APIs, used for developing the backend services of the website and managing data interactions. (JS to acces the python interface.)
+
+
 ## FOR SEO and analytics
+
 - Google Analytics: A web analytics service offered by Google that tracks and reports website traffic, used to monitor and analyze the website's performance and user behavior. [Google Analytics](https://analytics.google.com/analytics/web/)
 - Google Search Console: A web service offered by Google that allows webmasters to check indexing status [Google Search Console](https://search.google.com/search-console?resource_id=https%3A%2F%2Fcreciunel.github.io%2F)
 - Bing Webmaster Tools: A web service offered by Microsoft that allows webmasters to check indexing status and optimize the visibility of their websites in Bing search results. [Bing Webmaster Tools](https://www.bing.com/webmasters/home?siteUrl=https://creciunel.github.io/)
 
 -  Microsoft Clarity: A free user behavior analytics tool that helps website owners understand how users interact with their website through heatmaps, session recordings, and insights. [Microsoft Clarity](https://clarity.microsoft.com/)
+
