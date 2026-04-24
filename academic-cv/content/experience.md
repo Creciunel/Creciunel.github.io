@@ -18,6 +18,45 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+      
+  - block: markdown
+    content:
+      title: 'Professional Memberships & Volunteering'
+      text: |
+        {{< certificate 
+          title="Member" 
+          org="Danube Youth Council (DYC)" 
+          date="2025 - Present" 
+          icon="fa-user-graduate"
+          id="EUSDR Priority Areas 4, 7 & 8" 
+          logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLkE9U8NxYDnt59QY1zwGmMQCFWcXxL9V2Rg&s" 
+          link="https://danube-region.eu/danube-youth-council/"
+          button_text="Organization ↗"
+        >}}
+
+        {{< certificate 
+          title="Member" 
+          org="Societatea Fizicienilor din Moldova (SFM)" 
+          date="2025 - Present" 
+          icon="fa-user-graduate"
+          id="Physical Sciences Promotion" 
+          logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkA0sHvnzm3RL0DNTYJUN81APntDyoEH9VmA&s" 
+          link="https://sfm.utm.md/" 
+          button_text="Website ↗"
+        >}}
+
+        {{< certificate 
+          title="Member" 
+          org="Moldavian Youth Academy (MYA)" 
+          date="2026 - Present" 
+          icon="fa-user-graduate"
+          id="Academic Mentorship" 
+          logo="https://www.mya.md/sites/default/files/MYA_logo_01.png" 
+          link="https://www.mya.md/en/members" 
+          button_text="Profile ↗"
+        >}}
+    design:
+      columns: '1'
 
   - block: markdown
     content:
@@ -27,10 +66,6 @@ sections:
     design:
       columns: '1'
 
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: me
   - block: resume-awards
     content:
       title: Awards
@@ -44,6 +79,7 @@ sections:
           title="Certificate of Completion" 
           org="Creo Incubator" 
           date="Sep 2025" 
+          icon="fa-id-card"
           id="686bf2b21f3bd222920b8569" 
           logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQyaegZYY0bdspTPbzrQ2GjUh6kyAn8XMbeA&s" 
           link="https://mycourse.app/SJXBiORVenhuEYQpB?trk=public_profile_see-credential" 
@@ -92,6 +128,11 @@ sections:
   - block: resume-languages
     content:
       title: Languages
+      username: me
+
+  - block: resume-skills
+    content:
+      title: Skills & Hobbies
       username: me
 
 ---
