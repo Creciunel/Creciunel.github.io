@@ -21,7 +21,7 @@ sections:
       
   - block: markdown
     content:
-      title: 'Professional Memberships & Volunteering'
+      title: 'Memberships & Volunteering'
       text: |
         {{< certificate 
           title="Member" 
