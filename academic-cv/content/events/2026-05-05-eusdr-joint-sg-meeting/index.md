@@ -3,6 +3,18 @@ title: "Joint EUSDR PA 4 & PA 7 Steering Group Meeting"
 event: "EUSDR Joint Steering Group Meeting"
 event_url: "https://danube-region.eu/events/joint-eusdr-pa-4-pa-7-sg-meeting/"
 
+organizer:
+  name: "EUSDR Priority Area 4 & Priority Area 7"
+  url: "https://danube-region.eu/"
+
+eventStatus: "EventScheduled"
+
+offers:
+  price: "0"
+  priceCurrency: "EUR"
+  url: "https://danube-region.eu/events/joint-eusdr-pa-4-pa-7-sg-meeting/"
+  availability: "#"
+
 location: "Slovak Centre of Scientific and Technical Information (CVTI)"
 address:
   street: "Lamačská cesta 8A"

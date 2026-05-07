@@ -55,16 +55,19 @@ The program combined **policy dialogue, applied research insights, and startup i
 ---
 
 ## Morning Session  
+
 ### Boosting SME Competitiveness & Innovation through AI
 
 The morning session was organized within the framework of the **EU Strategy for the Danube Region (EUSDR)** under Priority Area 8, focusing on how AI can **enhance SME competitiveness and innovation capacity**.
 
 The session opened with contributions from key stakeholders including:
+
 - **Prof. h.c. Dr. Jonathan Loeffler** (Steinbeis Europa Zentrum)  
 - **Johannes Jung** (Ministry of Economic Affairs, Baden-Württemberg)  
 - **Dr. Balázs Barta** (Pannon Business Network, BrAIn Project Coordinator)  
 
 Further insights were provided by leading AI ecosystem actors such as:
+
 - **Dr. Florian Mayer** (Cyber Valley GmbH)  
 - **Jacqueline Roth-Ruoff** (IPAI – Innovationspark AI)  
 - **Sandra Schorrer** (KI Allianz)  
@@ -73,11 +76,13 @@ Further insights were provided by leading AI ecosystem actors such as:
 ### AI Applications Across Key Sectors
 
 The discussions focused on **three strategic sectors**:
+
 - Healthcare  
 - Manufacturing  
 - Agri-food  
 
 Case studies and applied research contributions included experts such as:
+
 - **Prof. Dieter Hertweck** (Reutlingen University)  
 - **Prof. Roland Gerhards** (University of Hohenheim)  
 - **Muhammad Saeed** (ARENA2036)  
@@ -86,6 +91,7 @@ Case studies and applied research contributions included experts such as:
 Interactive sessions enabled **real-time feedback and knowledge exchange**, bridging the gap between **policy frameworks and industrial deployment**.
 
 ### Key Takeaways
+
 - Strong alignment between **European policy and AI implementation strategies**  
 - Increasing importance of **regional AI ecosystems (e.g., Baden-Württemberg)**  
 - AI as a driver for **sector-specific digital transformation in SMEs**  
@@ -95,27 +101,32 @@ Interactive sessions enabled **real-time feedback and knowledge exchange**, brid
 ---
 
 ## Afternoon Session  
+
 ### Startup Competition & SME Pitching in AI
 
 The afternoon session focused on **entrepreneurship and market-oriented innovation**, featuring a **transnational startup competition** and SME pitching session.
 
 Moderated by **Dr. Balázs Barta**, the session included **11 startup pitches**, each presenting **AI-driven solutions** in domains such as:
+
 - Healthcare (e.g., AI for IVF and clinical decision support)  
 - Agri-food technologies  
 - Manufacturing optimization  
 - VR-based medical applications  
 
 Notable examples included:
+
 - AI-based embryo quality assessment systems  
 - Clinical AI agents for evidence-based decision-making  
 - Immersive VR healthcare solutions  
 
 The session concluded with:
+
 - Jury evaluation by experts from **Steinbeis Europa Zentrum**  
 - Award ceremony  
 - Networking and collaboration opportunities  
 
 ### Highlights
+
 - High maturity level of **AI startup solutions**  
 - Strong focus on **real-world deployment and scalability**  
 - Cross-border innovation within the **Danube Region ecosystem**  
@@ -127,6 +138,7 @@ The session concluded with:
 ## Closing Session & Strategic Outlook
 
 The event concluded with a **formal closing session**, including:
+
 - Signature of a **Memorandum of Understanding (MoU)**  
 - Contributions from **Steinbeis Europa Zentrum** and EUSDR stakeholders  
 - Strategic outlook on **AI adoption in Europe**  
