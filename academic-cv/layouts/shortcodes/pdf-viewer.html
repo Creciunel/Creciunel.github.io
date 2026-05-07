@@ -1,0 +1,10 @@
+<div class="pdf-container" style="width: 100%; height: 600px; margin: 2rem 0; border: 1px solid rgba(128,128,128,0.2); border-radius: 8px; overflow: hidden;">
+  {{ $file := .Get "url" }}
+  <iframe 
+    src="{{ $file | relURL }}" 
+    width="100%" 
+    height="100%" 
+    style="border: none;">
+    <p> Your browser does not support PDF viewing. <a href="{{ $file | relURL }}">Download the document here.</a></p>
+  </iframe>
+</div>
