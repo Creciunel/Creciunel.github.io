@@ -23,8 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.153.0
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # <--- Scapi de Warning-ul galben
+      HUGO_VERSION: 0.160.0 # <--- MODIFICĂ AICI (de la 0.153.0 la 0.160.0)
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +40,6 @@ jobs:
           cache-dependency-path: 'academic-cv/package.json'
 
       - name: Install Dependencies
-        # Intrăm în folderul academic-cv și instalăm pachetele necesare
         working-directory: academic-cv
         run: |
           npm install -D tailwindcss postcss autoprefixer
@@ -49,14 +48,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.153.0'
+          hugo-version: '0.160.0' # <--- MODIFICĂ ȘI AICI (de la '0.153.0' la '0.160.0')
           extended: true
-
-      # - name: Build with Hugo
-      #   # Executăm build-ul în folderul academic-cv
-      #   working-directory: academic-cv
-      #   run: |
-      #     hugo --gc --minify
 
       - name: Build with Hugo
         working-directory: academic-cv
@@ -68,8 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Important: Artifact-ul se află acum în academic-cv/public
-          path: ./academic-cv/public 
+          path: ./academic-cv/public
 
   deploy:
     environment:
