@@ -3,7 +3,6 @@ title: "Advanced Functional Materials & Aeromaterial Templates"
 summary: "Development and characterization of iron oxide systems (Fe₃O₄, Fe₂O₃) and GaN-based aeromaterials for the Young Researchers Project #24.80012.5007.12TC."
 date: 2024-07-01T09:00:00+03:00
 
-# Etichete pentru cercetare și competențe tehnice
 tags:
   - Material Science
   - SEM Analysis
@@ -13,54 +12,79 @@ tags:
   - Fe3O4/Fe2O3
   - GaN
 
-# Butoane de acțiune și afiliere
 links:
   - icon: flask
     icon_pack: fas
-    name: Project #24.80012.5007.12TC
+    name: Project Info
     url: "#"
   - icon: building-columns
     icon_pack: fas
     name: NCMST - UTM
     url: "https://ncmst.utm.md"
 
-# Imaginea reprezentativă
-# Sugestie: O imagine SEM reprezentativă sau o fotografie a setup-ului de tratament termic
-image:
-  filename: featured.jpg
-  focal_point: Smart
-  preview_only: false
-
 math: true
 ---
 
-As a researcher at the **National Center for Materials Study and Testing (NCMST)**, I contributed to the development and structural characterization of advanced functional materials under the Young Researchers Project **#24.80012.5007.12TC**.
+As a research engineer at the **National Center for Materials Study and Testing (NCMST)**, I contributed to the synthesis, processing, and high-resolution characterization of advanced nanostructures. This work was a core component of the Young Researchers Project **#24.80012.5007.12TC**, funded by the National Agency for Research and Development (**ANACED**), spanning 1.5 years from 2024 through 2025.
 
-## Research Activities
+---
 
-The project integrated multiple stages of material processing, from synthesis to high-resolution morphological analysis.
+## The Challenge: Synthesizing Next-Generation Ultra-Lightweight Aeromaterials
 
-### Material Processing & Synthesis
+The primary objective of this project was the synthesis and structural engineering of novel, ultra-lightweight, high-porosity 3D networks (aeromaterials). The core challenges addressed by our research group included:
 
-My primary responsibilities included the design and operation of custom laboratory setups:
-* **Thermal Treatment:** Designing setups for controlled heat treatments to facilitate phase transitions between magnetite ($\text{Fe}_3\text{O}_4$) and hematite ($\text{Fe}_2\text{O}_3$).
-* **Electrochemical Processes:** Performing oxide formation and redox mechanisms on various substrates.
-* **Aeromaterial Templates:** Investigating the growth of **Gallium Nitride (GaN)** on ultra-lightweight aeromaterial templates for advanced optoelectronic applications.
+* **Phase Stabilization:** Controlling precise phase transitions between magnetite ($\text{Fe}_3\text{O}_4$) and hematite ($\text{Fe}_2\text{O}_3$) during high-temperature thermal treatments.
+* **Structural Integrity:** Maintaining the ultra-low density macro-porous architecture of **Gallium Nitride (GaN)** nanonetworks when using sacrificial templates.
+* **Process Automation:** Replacing inconsistent manual laboratory protocols with automated embedded setups to guarantee repeatable environmental conditions during electrochemical and redox cycles.
 
-### Characterization & Analysis
+---
 
-To validate the synthesis processes, I performed:
-* **Morphological Analysis:** Using **Scanning Electron Microscopy (SEM)** to investigate surface topography and porosity.
-* **Structural Investigation:** Studying the evolution of iron oxide systems during redox cycles.
+## Research & Engineering Solution
+
+To overcome these barriers, our team developed a hybrid approach combining chemical nanotechnology, custom automated laboratory setups, and high-resolution electron microscopy.
+
+### 1. Advanced Material Processing
+
+My responsibilities centered on designing and operating automated custom hardware systems to optimize the chemical pathways:
+
+* **Thermal Oxidation & Reduction:** Utilizing automated PID-controlled thermal setups to handle precise ramp-up profiles, crucial for controlling the phase evolution of the iron oxide networks.
+* **Electrochemical Modification:** Performing precise oxide formation on diverse sacrificial metallic substrates to establish uniform pore sizes.
+* **GaN Aeromaterial Templates:** Investigating the uniform growth of semiconductor thin layers on lightweight porous templates intended for advanced optoelectronic and sensor applications.
+
+### 2. Characterization & Morphological Validation
+
+To evaluate the quality and crystalline layout of the resulting architectures, I performed extensive analysis utilizing advanced laboratory infrastructure:
+
+* **Scanning Electron Microscopy (SEM):** Investigating surface topography, pore distribution, wall thickness, and microstructural damage.
+* **Redox Stability Studies:** Observing how the microstructural skeleton of $\text{Fe}_3\text{O}_4$ networks reacts to continuous thermal and chemical stress.
+
+---
 
 ## Academic Dissemination
 
-Beyond the laboratory work, I participated in several international scientific conferences (such as **BPU12** and **MacroYouth 2025**) to present our findings:
-* Disseminating experimental results on **ZnO** and **Iron Oxide** nanostructures.
-* Engaging in technical discussions with the academic community regarding electrochemical optimization.
+The scientific outcomes generated during this 1.5-year research initiative were compiled and presented to the international scientific community across multiple prestigious events:
+
+* **BPU12 Congress (Bucharest):** Presented oral/poster sessions detailing the precise fabrication protocols and structural parameters of novel iron oxide-based aeromaterials (*Exploring Quantum Frontiers*).
+* **MacroYouth 2025 (Iași):** Showcased advanced optical and structural characterization data of synthesized $\text{Fe}_3\text{O}_4$ structures, engaging with regional experts in additive and chemical material synthesis.
+
+---
 
 ## Research Gallery
 
-{{< gallery-pro title="SEM Analysis of Iron Oxide Systems" images="ICMPP - Macroy2025_thumb.png, Presentation_BPU_2.jpg, Poster.jpg" >}}
+{{< gallery-pro title="SEM Analysis and Conference Presentations" images="Methodes.jpg, ICMPP - Macroy2025_thumb.png, Presentation_BPU_2.jpg, Poster.jpg, Poster1.jpg" >}}
 
 ---
+
+## Related Publications
+
+The experimental data, morphological studies, and synthesis methodologies validated during this ANACED-funded project are directly documented in the following internal publications:
+
+### 1. BPU12 Congress Proceedings
+
+Full paper and presentation abstract regarding the synthesis and quantum frontiers of novel iron oxide nanonetworks.
+[Read Publication](/publications/bpu12-congress/)
+
+### 2. MacroYouth 2025 Scientific Session
+
+Poster session and experimental methodology covering the comprehensive optical and structural characterization of $\text{Fe}_3\text{O}_4$ aeromaterials.
+[Read Publication](/publications/macroyouth-2025-poster/)

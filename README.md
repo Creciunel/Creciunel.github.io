@@ -17,14 +17,14 @@ This represint a overview of my academic and professional background, including 
 
 - [render.com](https://render.com/docs) a cloud platform that provides hosting and deployment services for web applications, used for deploying the website and managing its backend services.
 
-![3D Structure](https://www.rdkit.org/docs/_images/picture_2.png)
+<!-- ![3D Structure](https://www.rdkit.org/docs/_images/picture_2.png)
 
 - [RDKit](https://www.rdkit.org/docs/GettingStartedInPython.html) - RDKit: An open-source cheminformatics software used for working with chemical data, used for processing and analyzing chemical information related to my research.
 
 ![Dissociation of oxygen on Pt(100)](https://ase-lib.org/_images/o2pt100.png)
 
 - [ASE](https://ase-lib.org/gallery/gallery.html) - Atomic Simulation Environment: A Python library for setting up, manipulating, running, visualizing and analyzing atomistic simulations, used for simulating and analyzing atomic structures and interactions in my research.
-- FastAPI python framework for building APIs, used for developing the backend services of the website and managing data interactions. (JS to acces the python interface.)
+- FastAPI python framework for building APIs, used for developing the backend services of the website and managing data interactions. (JS to acces the python interface.) -->
 
 
 ## FOR SEO and analytics

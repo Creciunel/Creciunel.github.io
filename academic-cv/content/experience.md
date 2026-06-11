@@ -76,6 +76,16 @@ sections:
       title: 'Certifications'
       text: |
         {{< certificate 
+          title="Attendance Certificate of Zephyr Fundamentals Course" 
+          org="Iomico" 
+          date="Jun 2026" 
+          icon="fa-id-card"
+          id="Xp4m9L2vQ6" 
+          logo="https://media.licdn.com/dms/image/v2/C560BAQFtX0KjkbkjNA/company-logo_200_200/company-logo_200_200/0/1630639163063/iomico_logo?e=2147483647&v=beta&t=IeFpXnYhhDrTohXx0iufxcP0BVbR5zTof1UYfN1MjNE" 
+          link="https://www.learn.iomico.com/certificates/xp4m9l2vq6?trk=public_profile_see-credential" 
+        >}}
+
+        {{< certificate 
           title="Certificate of Completion" 
           org="Creo Incubator" 
           date="Sep 2025" 
