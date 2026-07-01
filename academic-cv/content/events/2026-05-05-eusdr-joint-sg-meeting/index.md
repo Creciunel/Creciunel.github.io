@@ -1,82 +1,79 @@
 ---
-title: "Joint EUSDR PA 4 & PA 7 Steering Group Meeting"
-event: "EUSDR Joint Steering Group Meeting"
-event_url: "https://danube-region.eu/events/joint-eusdr-pa-4-pa-7-sg-meeting/"
+title: "10th International Symposium on Dielectric Materials and Applications (ISyDMA’10)"
+event: "ISyDMA’10 Chisinau"
+event_url: "https://isydma10.utm.md/"
 
 organizer:
-  name: "EUSDR Priority Area 4 & Priority Area 7"
-  url: "https://danube-region.eu/"
+  name: "Technical University of Moldova"
+  url: "https://utm.md/"
 
 eventStatus: "EventScheduled"
 
 offers:
   price: "0"
   priceCurrency: "EUR"
-  url: "https://danube-region.eu/events/joint-eusdr-pa-4-pa-7-sg-meeting/"
+  url: "https://isydma10.utm.md/"
   availability: "#"
 
-location: "Slovak Centre of Scientific and Technical Information (CVTI)"
+location: "Technical University of Moldova"
 address:
-  street: "Lamačská cesta 8A"
-  city: "Bratislava"
-  region: "Slovakia"
-  postcode: "840 05"
+  street: "168 Ștefan cel Mare și Sfânt Blvd."
+  city: "Chișinău"
+  region: "Moldova"
+  postcode: "2004"
 
-summary: "Invited speaker representing the Danube Youth Council (DYC) to discuss expectations and cooperation within the EUSDR framework."
+summary: "Presenting our paper on Electrospun Multifunctional Nanofibrous Materials at the 10th edition of ISyDMA in Chișinău."
 
-# Data și ora evenimentului (conform agendei tale)
-date: "2026-05-05T09:30:00Z"
-date_end: "2026-05-06T12:30:00Z"
+# Event date
+date: "2026-07-01T09:00:00Z"
+date_end: "2026-07-03T18:00:00Z"
 all_day: false
 
 authors: [me]
-tags: ["EUSDR", "Danube Youth Council", "Water Quality", "Knowledge Society", "Policy"]
+tags: ["Electrospinning", "Nanofibers", "ZnO", "Chalcogenides", "Conferences", "UTM"]
 
 # Link-uri către documente și resurse
 links:
-- icon: pdf
+- icon: globe
   icon_pack: fas
-  name: Agenda
-  url: "Invitation_Agenda_joint_PA4_PA7 SG meeting_Final with links_update.pdf"
-- icon: file-powerpoint
-  name: Presentation
-  url: "DYC,_Joint_Steering_Group_Meeting_PA4_&_PA7_5_May.pdf"
-- icon: users
-  name: SG Members
-  url: "https://danube-region.eu/contact-us/steering-group-members/"
+  name: Website
+  url: "https://isydma10.utm.md/"
+- icon: file-pdf
+  icon_pack: fas
+  name: Final Program
+  url: "Program-ISyDMAIO-Final-Final-25.0626.pdf"
 
 ---
 
 ## Event Overview
 
-The Joint Steering Group Meeting brought together Priority Area 4 (Water Quality) and Priority Area 7 (Knowledge Society) of the European Union Strategy for the Danube Region (EUSDR). The meeting focused on technical coordination, policy updates from the European Commission, and the strategic planning of activities for 2026.
+The chairs and organizing committees of the **ISyDMA’10** are pleased to announce that the International Symposium on Dielectric Materials and Applications (ISyDMA), 10th edition is hosted in Chișinău, Republic of Moldova during **July 1–3, 2026**.
 
-## My Contribution
+The ISyDMA conference is an international event focused on recent developments in dielectric materials and their applications. It is aimed at PhD students, post-docs, researchers, and engineers concerned with innovations in advanced dielectric materials for biomedical, biotechnological, and industrial applications. The works presented during the meeting will be published in the Conference Proceedings by **Springer Nature**.
 
-As a member of the **Danube Youth Council (DYC)**, I was invited as a speaker in the joint session on May 5th. My presentation, titled **"DYC members – expectations & cooperation"**, focused on:
+### Official Video Introduction
+{{< youtube NgGMrnB3IPc >}}
 
-* Bridging the gap between regional policy-making and the younger generation of researchers and professionals.
-* Identifying concrete opportunities for cooperation between DYC and Priority Areas 4 and 7.
-* Enhancing youth participation in flagship processes and regional projects.
+---
 
-{{< pdf-viewer url="/uploads/DYC_Joint_Meeting_PA4_PA7.pdf" >}}
+## My Contribution & Abstract
 
-## Agenda Highlights
+### ELECTROSPUN MULTIFUNCTIONAL NANOFIBROUS MATERIALS 
 
-### Day 1: Joint PA4-PA7 Session
+**C. Creciunel\*, C. Cechin, A. Tiron, V. Ciobanu, E.V. Monaico**  
+*National Center for Materials Study and Testing, Technical University of Moldova*  
+\*Email: catalin.creciunel@cnstm.utm.md
 
-* **European Commission Update:** DG Regio insights on the Danube Strategy.
-* **PA 4 & PA 7 Activities:** Strategic plans for 2026 regarding water digitalisation and knowledge society evaluation.
-* **Stakeholder Discussion:** Reflection on cross-sectoral cooperation.
+**Abstract:** Electrospinning is a versatile and widely employed technique for the fabrication of nanofibrous polymeric or semiconductor materials with controlled morphology, high surface-to-volume ratio, and tunable functional properties [1]. ZnO nanofibers fabricated by this method are widely investigated due to the material properties such as electrical, optical, or antibacterial activity, making it suitable for multifunctional applications. Besides ZnO, tin sulfide-based materials, including SnS and $\text{SnS}_2$, have demonstrated promising performance in optoelectronic devices such as photodetectors [2] as well as in photocatalytic processes, particularly in the case of $\text{SnS}_2$ due to its favorable electronic structure [3].
 
-### Day 2: Strategic Information Exchange
+In this study, we report on the fabrication of pure polymer and composite polymer–nanoparticle nanofibers via electrospinning process using a home-made system, and their characterization. The primary objective was to develop uniform nanofibrous mats based on poly(vinyl alcohol) (PVA), ZnO, as well as composite systems incorporating tin sulfide (SnS, $\text{SnS}_2$) nanoparticles, and to investigate the influence of processing parameters and material composition on fiber morphology and functional behavior. 
 
-* Updates from international organizations including [ICPDR](https://www.icpdr.org/), [GWP](https://www.gwp.org/), CEE, and the Danube Sturgeon Task Force.
+To combine antibacterial and photocatalytic functionalities within a single platform, $\text{SnS/SnS}_2$ nanoparticles were added into the PVA/ZnO precursor solution, which was subsequently processed via electrospinning to obtain composite nanofibers or $\text{ZnO/SnS}$ ($\text{ZnO/SnS}_2$) heterostructures. The nanofibers were obtained at different voltages ranging from 15 to 25 kV and distances from 8 to 12 cm, followed by an annealing process in order to remove the organic compound. The resulting materials were analyzed in terms of morphology (SEM), composition (EDX), and potential multifunctional performance for application in sensing, filtration, optoelectronics and biomedical engineering.
+
+**Keywords:** Electrospinning; nanofibers; composite materials; ZnO; chalcogenides
 
 ---
 
 ## Photo Gallery
 
-{{< gallery-pro title="PA4 & PA7 Meeting" images="Presentation.jpg,grup_photo.jpeg, Grup_pic_1.jpg, Grup_pic_2.jpg, Grup_pic_3.jpg, PA4_sesion.jpg, PA7_sesion.jpg " >}}
-
----
+{{< gallery-pro title="ISyDMA'10 Gallery & Speakers" images="ISYDMAIO-logo-1-1.jpg, Program-at-glance.jpg, Conferec_Hall.jpg, Creciunel_Picture.jpg, Poster.jpg, Creciunel_Full_Body_Picture.jpg, A_Zourif.jpg, A_Zourif2.jpg, ODAGAWA_Hiroyuki.jpg, ODAGAWA_Hiroyuki_2.jpg, BANYS_Juras.jpg, BROSSEAU_Christian.jpg, Certificate.jpg" >}}
