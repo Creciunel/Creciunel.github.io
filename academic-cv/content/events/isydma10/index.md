@@ -15,7 +15,7 @@ links:
   - icon: file-pdf
     icon_pack: fas
     name: Final Program
-    url: Program-ISyDMAIO-Final-Final-25.0626.pdf
+    url: Program-ISyDMA10.pdf
 
 summary: "Presenting our paper on Electrospun Multifunctional Nanofibrous Materials at the 10th edition of ISyDMA in Chișinău."
 
@@ -74,10 +74,23 @@ To combine antibacterial and photocatalytic functionalities within a single plat
 **Keywords:** Electrospinning; nanofibers; composite materials; ZnO; chalcogenides
 
 ---
-
 ## Technical Session & Program Overview
 
 The presentations were highly collaborative, balancing complex materials physics with industrial scalability. You can track the timeline and structure of the event through the materials below:
+
+### Video Presentation
+Watch the complete video presentation of our paper below, detailing the electrospinning process and the resulting structural outcomes:
+
+<div style="text-align: center; background: #000; max-width: 450px; margin: 0 auto; border-radius: 8px; overflow: hidden;">
+  <video style="width: 100%; max-height: 70vh; object-fit: contain; display: block;" controls poster="featured.jpg">
+    <source src="Poster_presentation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+---
+
+## Photo Gallery
 
 {{< gallery-pro title="Presentation & Technical Materials" images="Program-at-glance.jpg, Poster.jpg, Certificate.jpg, Creciunel_Full_Body_Picture.jpg" >}}
 

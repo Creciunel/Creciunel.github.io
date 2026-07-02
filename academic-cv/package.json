@@ -10,12 +10,19 @@
     "pagefind": "pagefind --site public"
   },
   "dependencies": {
+    "autoprefixer": "^10.5.2",
     "pagefind": "^1.4.0",
+    "postcss": "^8.5.16",
     "preact": "^10.27.2"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
-    "tailwindcss": "^4.2.2"
-  }
+    "tailwindcss": "^4.3.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
