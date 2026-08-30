@@ -15,76 +15,282 @@ tags:
 links:
   - icon: flask
     icon_pack: fas
-    name: Project Info
-    url: "#"
-  - icon: building-columns
+    name: Project #24.80012.5007.12TC
+    url: "https://creciunel.github.io/projects/advanced-functional-materials/"
+  - icon: university
     icon_pack: fas
-    name: NCMST - UTM
+    name: National Center for Materials Study
     url: "https://ncmst.utm.md"
 
 math: true
+toc: false
 ---
 
-As a research engineer at the **National Center for Materials Study and Testing (NCMST)**, I contributed to the synthesis, processing, and high-resolution characterization of advanced nanostructures. This work was a core component of the Young Researchers Project **#24.80012.5007.12TC**, funded by the National Agency for Research and Development (**ANACED**), spanning 1.5 years from 2024 through 2025.
+<style>
+/* 1. Ascundere forțată a elementelor laterale */
+.docs-toc, #TableOfContents, aside.col-xl-3, .d-xl-block, .page-sidebar {
+  display: none !important;
+}
 
----
+/* 2. Suprascrierea containerelor specifice Hugo Blox / Academic care blochează lățimea */
+.article-container, .article-style, .prose, .container, .col-lg-9, .col-lg-8, .col-xl-8, article, main {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
-## The Challenge: Synthesizing Next-Generation Ultra-Lightweight Aeromaterials
+/* 3. Breakout extins pentru Timeline (Folosind viewport width pentru a forța ieșirea din orice div) */
+.timeline-breakout {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 50px;
+  padding: 0 4vw;
+  box-sizing: border-box;
+  z-index: 10;
+}
 
-The primary objective of this project was the synthesis and structural engineering of novel, ultra-lightweight, high-porosity 3D networks (aeromaterials). The core challenges addressed by our research group included:
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-* **Phase Stabilization:** Controlling precise phase transitions between magnetite ($\text{Fe}_3\text{O}_4$) and hematite ($\text{Fe}_2\text{O}_3$) during high-temperature thermal treatments.
-* **Structural Integrity:** Maintaining the ultra-low density macro-porous architecture of **Gallium Nitride (GaN)** nanonetworks when using sacrificial templates.
-* **Process Automation:** Replacing inconsistent manual laboratory protocols with automated embedded setups to guarantee repeatable environmental conditions during electrochemical and redox cycles.
+/* Axă verticală */
+.timeline-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(180deg, #10b981 0%, #3b82f6 33%, #8b5cf6 66%, #ec4899 100%);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
----
+.timeline-node {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
 
-## Research & Engineering Solution
+.timeline-left { left: 0; text-align: right; }
+.timeline-right { left: 50%; text-align: left; }
 
-To overcome these barriers, our team developed a hybrid approach combining chemical nanotechnology, custom automated laboratory setups, and high-resolution electron microscopy.
+.timeline-marker {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #10b981;
+  border: 4px solid #ffffff;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
+}
+.timeline-left .timeline-marker { right: -13px; }
+.timeline-right .timeline-marker { left: -13px; }
 
-### 1. Advanced Material Processing
+/* Carduri */
+.timeline-card {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: left; 
+}
 
-My responsibilities centered on designing and operating automated custom hardware systems to optimize the chemical pathways:
+.timeline-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
 
-* **Thermal Oxidation & Reduction:** Utilizing automated PID-controlled thermal setups to handle precise ramp-up profiles, crucial for controlling the phase evolution of the iron oxide networks.
-* **Electrochemical Modification:** Performing precise oxide formation on diverse sacrificial metallic substrates to establish uniform pore sizes.
-* **GaN Aeromaterial Templates:** Investigating the uniform growth of semiconductor thin layers on lightweight porous templates intended for advanced optoelectronic and sensor applications.
+.timeline-heading {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
-### 2. Characterization & Morphological Validation
+.timeline-heading a {
+  text-decoration: none;
+  color: inherit;
+}
 
-To evaluate the quality and crystalline layout of the resulting architectures, I performed extensive analysis utilizing advanced laboratory infrastructure:
+.timeline-heading a:hover {
+  text-decoration: underline;
+}
 
-* **Scanning Electron Microscopy (SEM):** Investigating surface topography, pore distribution, wall thickness, and microstructural damage.
-* **Redox Stability Studies:** Observing how the microstructural skeleton of $\text{Fe}_3\text{O}_4$ networks reacts to continuous thermal and chemical stress.
+.timeline-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
----
+/* Galerie și Media Interactive */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
 
-## Academic Dissemination
+.grid-gallery a {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
 
-The scientific outcomes generated during this 1.5-year research initiative were compiled and presented to the international scientific community across multiple prestigious events:
+.grid-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top; /* Setează focusul decupajului pe partea de sus a imaginii */
+  border-radius: 10px;
+  border: 1px solid rgba(156, 163, 175, 0.4);
+  transition: transform 0.3s ease;
+  display: block;
+}
 
-* **BPU12 Congress (Bucharest):** Presented oral/poster sessions detailing the precise fabrication protocols and structural parameters of novel iron oxide-based aeromaterials (*Exploring Quantum Frontiers*).
-* **MacroYouth 2025 (Iași):** Showcased advanced optical and structural characterization data of synthesized $\text{Fe}_3\text{O}_4$ structures, engaging with regional experts in additive and chemical material synthesis.
+.grid-gallery a:hover img {
+  transform: scale(1.05);
+}
 
----
+/* Structură Echipă */
+.team-list { 
+  margin-top: 20px; 
+  padding-top: 15px; 
+  border-top: 1px dashed rgba(156, 163, 175, 0.4); 
+  font-size: 0.95rem; 
+}
+.team-role { 
+  font-weight: 600; 
+  margin-top: 10px; 
+  margin-bottom: 5px; 
+}
+.team-list ul { 
+  margin: 0 0 15px 20px; 
+  padding: 0; 
+}
 
-## Research Gallery
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .timeline-breakout { 
+    width: 100vw; 
+    margin-left: -50vw; 
+    margin-right: -50vw; 
+    padding: 0 15px; 
+  }
+  .timeline-wrapper::after { left: 24px; transform: none; }
+  .timeline-node { width: 100%; padding-left: 55px; padding-right: 10px; text-align: left; }
+  .timeline-right { left: 0; }
+  .timeline-left .timeline-marker, .timeline-right .timeline-marker { left: 13px; right: auto; }
+}
+</style>
 
-{{< gallery-pro title="SEM Analysis and Conference Presentations" images="Methodes.jpg, ICMPP - Macroy2025_thumb.png, Presentation_BPU_2.jpg, Poster.jpg, Poster1.jpg" >}}
+<div class="timeline-breakout">
+  <div class="timeline-wrapper">
 
----
+  <!-- STAGE 1: Project Conclusion (Dec 2025) -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker" style="background-color: #10b981; box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #10b981;"><i class="fas fa-check-circle"></i> December 2025 • Completed</span>
+        <h3 class="timeline-heading">Project Finalization & Results Delivery</h3>
+        <p class="timeline-desc" style="margin-bottom: 0;">
+          Successfully concluded the 1.5-year research project funded by the National Agency for Research and Development (ANACED). Delivered validated protocols for high-porosity 3D aeromaterial templates and published findings in international congresses.
+        </p>
+      </div>
+    </div>
 
-## Related Publications
+  <!-- STAGE 2: MacroYouth 2025 Conference -->
+  <div class="timeline-node timeline-right">
+      <div class="timeline-marker" style="background-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25);"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #3b82f6;"><i class="fas fa-award"></i> Conference Milestone</span>
+        <h3 class="timeline-heading"><a href="https://creciunel.github.io/publications/macroyouth-2025-poster/">MacroYouth 2025 Presentation</a></h3>
+        <p class="timeline-desc">
+          Showcased advanced optical and structural characterization data of synthesized Fe₃O₄ aeromaterial structures in Iași, receiving the 3rd Prize for Best Poster Presentation.
+        </p>
+        <div class="grid-gallery">
+          <a href="ICMPP - Macroy2025_thumb.png" data-fancybox="stage-2">
+            <img src="ICMPP - Macroy2025_thumb.png" alt="MacroYouth 2025 Poster Award Presentation">
+          </a>
+        </div>
+      </div>
+    </div>
 
-The experimental data, morphological studies, and synthesis methodologies validated during this ANACED-funded project are directly documented in the following internal publications:
+  <!-- STAGE 3: BPU12 Congress -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker" style="background-color: #8b5cf6; box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.25);"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #8b5cf6;"><i class="fas fa-globe"></i> International Dissemination</span>
+        <h3 class="timeline-heading"><a href="https://creciunel.github.io/publications/bpu12-congress/">BPU12 Congress (Bucharest)</a></h3>
+        <p class="timeline-desc">
+          Presented research findings on quantum frontiers and fabrication protocols for novel iron oxide nanonetworks (Fe₃O₄ / Fe₂O₃) during the 12th International Conference of the Balkan Physical Union.
+        </p>
+        <div class="grid-gallery">
+          <a href="Presentation_BPU_2.jpg" data-fancybox="stage-3">
+            <img src="Presentation_BPU_2.jpg" alt="BPU12 Conference Presentation">
+          </a>
+        </div>
+      </div>
+    </div>
 
-### 1. BPU12 Congress Proceedings
+  <!-- STAGE 4: Hardware & Instrumentation Automation -->
+  <div class="timeline-node timeline-right">
+      <div class="timeline-marker" style="background-color: #f59e0b; box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #f59e0b;"><i class="fas fa-microchip"></i> Automation Milestone</span>
+        <h3 class="timeline-heading"><a href="https://creciunel.github.io/publications/gpib-laboratory-instruments/">GPIB Instrumentation Setup</a></h3>
+        <p class="timeline-desc">
+          Developed automated embedded control systems and GPIB interface software to replace manual laboratory steps, ensuring repeatable environmental control during electrochemical and thermal redox cycles.
+        </p>
+        <div class="grid-gallery">
+          <a href="GPIB.png" data-fancybox="stage-4">
+            <img src="GPIB.png" alt="Image of designed and fabricated PCB">
+          </a>
+        </div>
+      </div>
+    </div>
 
-Full paper and presentation abstract regarding the synthesis and quantum frontiers of novel iron oxide nanonetworks.
-[Read Publication](/publications/bpu12-congress/)
+  <!-- STAGE 5: Project Initiation & Team (July 2024) -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker" style="background-color: #ec4899; box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.25);"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #ec4899;"><i class="fas fa-flag"></i> July 2024 • Project Launch</span>
+        <h3 class="timeline-heading">Project Initiation (#24.80012.5007.12TC)</h3>
+        <p class="timeline-desc" style="margin-bottom: 0;">
+          Official kickoff of the Young Researchers Project at the National Center for Materials Study and Testing (NCMST). Initiated phase stabilization studies for magnetite (Fe₃O₄), hematite (Fe₂O₃), and ultra-lightweight GaN porous templates.
+        </p>
+        <div class="team-list">
+          <div class="team-role" style="color: #ec4899;"><i class="fas fa-user-tie"></i> Management & Expert Guidance:</div>
+          <ul>
+            <li><strong>Vladimir Ciobanu</strong> – Project Manager</li>
+            <li><strong>Tudor Braniște</strong> – Scientific Expert</li>
+          </ul>
+          <div class="team-role" style="color: #ec4899;"><i class="fas fa-users-cog"></i> Engineering Team:</div>
+          <ul style="margin-bottom: 0;">
+            <li>Cătălin Creciunel</li>
+            <li>Tatiana Maslova</li>
+            <li>Simon Busuioc</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-### 2. MacroYouth 2025 Scientific Session
-
-Poster session and experimental methodology covering the comprehensive optical and structural characterization of $\text{Fe}_3\text{O}_4$ aeromaterials.
-[Read Publication](/publications/macroyouth-2025-poster/)
+  </div>
+</div>

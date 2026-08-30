@@ -17,98 +17,271 @@ links:
     url: https://github.com/NCMST/Temperature_Control/
 
 math: true
+toc: false
 ---
 
-Real-time temperature controller designed for industrial and laboratory applications. The system leverages the dual-core architecture of the **ESP32** to separate deterministic PID regulation logic from the asynchronous communication stack.
+<style>
+/* 1. Hide default TOC and sidebars */
+.docs-toc, #TableOfContents, aside.col-xl-3, .d-xl-block, .page-sidebar {
+  display: none !important;
+}
+
+/* 2. Absolute Breakout */
+.timeline-breakout {
+  position: relative;
+  width: 96vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Vertical Axis */
+.timeline-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(180deg, #f59e0b 0%, #3b82f6 50%, #10b981 100%);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-node {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-left { left: 0; text-align: right; }
+.timeline-right { left: 50%; text-align: left; }
+
+.timeline-marker {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #f59e0b;
+  border: 4px solid #ffffff;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);
+}
+.timeline-left .timeline-marker { right: -13px; }
+.timeline-right .timeline-marker { left: -13px; }
+
+/* Cards */
+.timeline-card {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: left; 
+}
+
+.timeline-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+.timeline-heading {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.timeline-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 3. Interactive Gallery Grid */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.grid-gallery a {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.grid-gallery img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(156, 163, 175, 0.4);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.grid-gallery a:hover img {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .timeline-breakout { width: 100vw; padding: 0 10px; }
+  .timeline-wrapper::after { left: 24px; transform: none; }
+  .timeline-node { width: 100%; padding-left: 55px; padding-right: 10px; text-align: left; }
+  .timeline-right { left: 0; }
+  .timeline-left .timeline-marker, .timeline-right .timeline-marker { left: 13px; right: auto; }
+}
+</style>
+
+<div class="timeline-breakout">
+  <div class="timeline-wrapper">
+
+  <!-- STAGE 1 -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag"><i class="fas fa-exclamation-triangle"></i> Lab Challenge • Legacy Setup</span>
+        <h3 class="timeline-heading">Manual Thermal Oxidation Limitations</h3>
+        <p class="timeline-desc">
+          Semiconductor nanostructure synthesis required strict thermal profiles. The original 800W thermal reactor operated with manual LATR autotransformer control and no closed-loop feedback, leading to human error and inconsistent soak times.
+        </p>
+        <div class="grid-gallery">
+          <a href="TermalReactor2.jpg" data-fancybox="stage-1">
+            <img src="TermalReactor2.jpg" alt="Thermal Reactor Setup">
+          </a>
+          <a href="TermalReactor.jpg" data-fancybox="stage-1">
+            <img src="TermalReactor.jpg" alt="Thermal Reactor View">
+          </a>
+          <a href="InitialTemperatureMasurment.jpg" data-fancybox="stage-1">
+            <img src="InitialTemperatureMasurment.jpg" alt="Manual Multimeter Measurement">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- STAGE 2 -->
+  <div class="timeline-node timeline-right">
+      <div class="timeline-marker" style="background-color: #3b82f6;"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #3b82f6;"><i class="fas fa-tools"></i> Hardware Iteration 1 & 2</span>
+        <h3 class="timeline-heading">Perfboard Prototyping & In-House Etching</h3>
+        <p class="timeline-desc">
+          Engineered Prototypes 1 & 1B on perfboard to validate zero-crossing triac drivers and thermocouple conditioning. Designed and etched Prototype No. 2 double-sided PCB in-house via thermal toner transfer to reduce analog noise.
+        </p>
+        <div class="grid-gallery">
+          <a href="PrototipeNr1A.jpg" data-fancybox="stage-2">
+            <img src="PrototipeNr1A.jpg" alt="Prototype 1A">
+          </a>
+          <a href="prototipN1B.jpg" data-fancybox="stage-2">
+            <img src="prototipN1B.jpg" alt="Prototype 1B">
+          </a>
+          <a href="PrototipeNr2LUTCuperLayer.jpg" data-fancybox="stage-2">
+            <img src="PrototipeNr2LUTCuperLayer.jpg" alt="Copper Layer Design">
+          </a>
+          <a href="PrototipeNr2.jpg" data-fancybox="stage-2">
+            <img src="PrototipeNr2.jpg" alt="Etched PCB">
+          </a>
+          <a href="PrototipeNr2display.jpg" data-fancybox="stage-2">
+            <img src="PrototipeNr2display.jpg" alt="Prototype Display">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- STAGE 3 -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker" style="background-color: #8b5cf6;"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #8b5cf6;"><i class="fas fa-microchip"></i> Manufacturing Phase</span>
+        <h3 class="timeline-heading">Galvanic Isolation & JLCPCB Fabrication</h3>
+        <p class="timeline-desc">
+          Designed an industrial-grade PCB manufactured by JLCPCB. Features full galvanic optocoupler isolation decoupling high-voltage 800W AC mains power from the low-voltage DC microcontroller section.
+        </p>
+        <div class="grid-gallery">
+          <a href="Schematic_termicControl-for-fabrication_2026-06-11.png" data-fancybox="stage-3">
+            <img src="Schematic_termicControl-for-fabrication_2026-06-11.png" alt="Schematic Diagram">
+          </a>
+          <a href="PCB_PCB_termicControl-copy_2026-06-11.png" data-fancybox="stage-3">
+            <img src="PCB_PCB_termicControl-copy_2026-06-11.png" alt="PCB Layout">
+          </a>
+          <a href="Photo-View_2026-06-11.svg" data-fancybox="stage-3">
+            <img src="Photo-View_2026-06-11.svg" alt="3D Board Render">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- STAGE 4 -->
+  <div class="timeline-node timeline-right">
+      <div class="timeline-marker" style="background-color: #10b981;"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #10b981;"><i class="fas fa-code"></i> Embedded Firmware</span>
+        <h3 class="timeline-heading">FreeRTOS Dual-Core & Async Web Dashboard</h3>
+        <p class="timeline-desc">
+          Leveraged ESP32 dual cores: Core 0 executes deterministic 100ms PID control tasks and PWM firing; Core 1 hosts ESPAsyncWebServer streaming live temperature WebSockets, online tuning, and CSV data downloads.
+        </p>
+        <div class="grid-gallery">
+          <a href="featured.jpg" data-fancybox="stage-4">
+            <img src="featured.jpg" alt="Controller Main Unit">
+          </a>
+          <a href="main windows.png" data-fancybox="stage-4">
+            <img src="main windows.png" alt="Main UI Dashboard">
+          </a>
+          <a href="Setting_page.png" data-fancybox="stage-4">
+            <img src="Setting_page.png" alt="PID Tuning Page">
+          </a>
+          <a href="CSV page.png" data-fancybox="stage-4">
+            <img src="CSV page.png" alt="CSV Export Interface">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- STAGE 5 -->
+  <div class="timeline-node timeline-left">
+      <div class="timeline-marker" style="background-color: #ec4899;"></div>
+      <div class="timeline-card">
+        <span class="timeline-tag" style="color: #ec4899;"><i class="fas fa-atom"></i> Practical Application</span>
+        <h3 class="timeline-heading">Zinc Oxide (ZnO) Thermal Oxidation</h3>
+        <p class="timeline-desc">
+          Achieved precise $2Zn + O_2 \xrightarrow{\Delta T > 400^\circ C} 2ZnO$ thermal oxidation profiles. Tight PID regulation prevents structural defects and ensures reproducible wide-bandgap nanostructures.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 ---
 
-## The Challenge: Legacy & Manual Thermal Oxidation
-
-In semiconductor research, material synthesis requires strict thermal profiles. Initially, our laboratory used an open **800W thermal reactor**. The system suffered from critical limitations:
-
-* **Manual Control:** Power regulation was handled via a manual autotransformer (LATR).
-* **No Closed-Loop Feedback:** Temperature tracking relied entirely on a basic digital multimeter with a thermocouple.
-* **Inconsistency:** Human error and environmental fluctuations made it impossible to achieve repeatable ramp-up and soak times, directly degrading the crystalline quality of the synthesized nanostructures.
-
-The objective was to design a low-cost, automated, closed-loop PID controller capable of driving high-power heating elements while exposing a web interface for real-time monitoring and data logging.
-
-{{< gallery-pro title="Initial setup" images="TermalReactor2.jpg, TermalReactor.jpg, InitialTemperatureMasurment.jpg" >}}
-
----
-
-## Hardware Evolution: From Breadboard to Production
-
-The hardware went through an iterative engineering process to move from a risky laboratory prototype to an industrial-grade control board:
-
-### 1. Proof of Concept & Prototyping
-
-* **Prototypes No. 1 & 1B:** Built on perfboards (prototyping boards with pre-drilled holes) to validate the thermocouple conditioning circuit and the zero-crossing triac driver.
-* **Prototype No. 2 (Toner Transfer):** To reduce noise on the analog lines, a custom double-sided PCB layout was designed and etched in-house using the thermal toner transfer method.
-
-{{< gallery-pro title="Hardware Engineering & Layout" images="PrototipeNr1A.jpg, prototipN1B.jpg, PrototipeNr2LUTCuperLayer.jpg, PrototipeNr2.jpg, PrototipeNr2display.jpg" >}}
-
-### 2. Industrial Grade Production (JLCPCB)
-
-The final iteration was optimized for mass manufacturing and professionally manufactured. The design incorporates galvanic isolation to decouple the high-voltage AC mains (driving the 800W load) from the low-voltage DC microcontroller section.
-
-{{< gallery-pro title="Hardware Engineering & Layout" images="Schematic_termicControl-for-fabrication_2026-06-11.png, PCB_PCB_termicControl-copy_2026-06-11.png, Photo-View_2026-06-11.svg" >}}
-
----
-
-## Firmware Architecture & Web UI
-
-The firmware is built on top of **FreeRTOS**, taking advantage of the ESP32's dual-core processor to ensure that network latency never interferes with the critical timing of the control loop:
-
-* **Core 0 (Control Loop):** Executes a high-priority, deterministic FreeRTOS task every 100ms to sample the thermocouple, update the custom-tuned PID algorithm, and adjust the PWM/Triac firing angle.
-* **Core 1 (Communication Stack):** Hosts an `ESPAsyncWebServer` that serves an interactive web interface. It utilizes WebSockets to stream live temperature data to the client and handles asynchronous HTTP requests for system configuration.
-
-{{< gallery-pro title="System Interface and Data Visualization" images="featured.jpg, main windows.png, Setting_page.png, CSV page.png" >}}
-
-Users can real-time monitor the current temperature graph, tune PID parameters ($K_p$, $K_i$, $K_d$) on the fly, and download complete experimental data logs directly as CSV files for analytical post-processing.
-
----
-
-## Practical Application: Zinc Oxide (ZnO) Synthesis
-
-In the field of semiconductor research, precise thermal control is critical for processes such as **thermal oxidation**. Using the interactive simulator below, I have modeled the interaction between Zinc and Oxygen atoms under the influence of thermal energy regulated by our PID system.
+## Interactive Atomic Oxidation Simulation
 
 {{< the-atomic-lab >}}
-
-### The Mechanism of Zinc Oxidation
-
-The oxidation of Zinc is a thermally activated process that depends on overcoming a specific **activation energy barrier**. In the simulation above, you can observe this phenomenon by adjusting the temperature slider:
-
-* **Agitation Phase:** At lower temperatures (below **400°C**), the **Zn** atoms (grey) and **O** atoms (red) undergo elastic collisions, maintaining their individual chemical identities.
-* **Activation Energy:** As the PID controller ramps up the temperature, the average kinetic energy of the particles increases according to the kinetic theory of gases:
-    $$E_k = \frac{3}{2}kT$$
-* **Chemical Reaction:** Upon reaching the critical threshold, collisions become energetic enough to overcome electron shell repulsion, facilitating the formation of **ZnO** (visualized as white-grey particles).
-
-$$2Zn + O_2 \xrightarrow{\Delta T > 400^\circ C} 2ZnO$$
-
-### Importance in Semiconductors
-
-Zinc oxide ($ZnO$) is a fundamental wide-bandgap building block for advanced electronic and optoelectronic nanostructures. By precisely controlling the temperature profile (**Ramp-up** and **Soak** times), we can directly influence the morphology and crystalline quality of the resulting $ZnO$.
-
-This project demonstrates why the thermal stability provided by the **FreeRTOS + PID** algorithm is essential: even a minor fluctuation of a few degrees can halt the reaction or lead to incomplete oxidation, which would drastically alter the final electrical properties of the semiconductor.
 
 ---
 
 ## Related Publications
 
-The engineering outcomes and material characterization data resulting from this thermal control platform have been published in the following academic frameworks. You can explore the detailed research papers below:
-
-### 1. Thermal Treatment Control Systems
-
-Detailed analysis of the remote-controlled temperature setup and its application specifically optimized for Zinc foils oxidation.
-[Read Publication](/publications/zinc-thermal-treatment-control/)
-
-### 2. Physics of Materials
-
-Presentation of the  optimized embedded solution designed to automate the thermal treatment process.
-[Read Publication](/publications/pm8-conference/)
-
-### 3. Porous Gallium Oxide Nanostructures
-
-Expansion of the thermal oxidation methodology applied to other wide-bandgap semiconductors ($GaP$ to $Ga_2O_3$ transition).
-[Read Publication](/publications/porous-gallium-oxide-gap/)
+* **[Thermal Treatment Control Systems](/publications/zinc-thermal-treatment-control/):** Remote-controlled temperature setup optimized for Zinc foil oxidation.
+* **[Physics of Materials](/publications/pm8-conference/):** Optimized embedded solution designed to automate thermal treatment.
+* **[Porous Gallium Oxide Nanostructures](/publications/porous-gallium-oxide-gap/):** Thermal oxidation methodology applied to wide-bandgap semiconductors ($GaP$ to $Ga_2O_3$).
